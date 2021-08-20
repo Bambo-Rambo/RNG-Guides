@@ -1,6 +1,6 @@
-# TID SID to time RNG Generation 6
+# Gen 6 TID/SID RNG on Citra
 
-### Latest Guide Update: 22 April 2021
+### Latest Guide Update: 20 August 2021
 
 ### [Original Page](https://github.com/Bambo-Rambo/RNG-Guides/wiki/TID-SID-to-time-RNG-Generation-6)
 
@@ -12,38 +12,43 @@
 
 [CitraRNG](https://github.com/Admiral-Fish/CitraRNG/releases/tag/v3.1.0) by Admiral-Fish
 
-[Gen 6 TID/SID to time](https://github.com/Bambo-Rambo/Gen-6-TID-SID-to-time/releases) by me
+[Tiny Finder](https://github.com/Bambo-Rambo/TinyFinder) by me
 
-(Download .NET core if you haven't already to run the program). 
 
-The tool I provide for this guide is meant to work for Citra. You can attempt this on console but expect to spend a lot of your time calibrating and manipulating your TinyMT mainly because of the millisecond accuracy when booting the game.
+The tool I provide for this guide is meant to work for Citra. You can attempt this on console but expect to spend a lot of time calibrating and manipulating the TinyMT due to the millisecond accuracy required when booting the game.
 
 # Finding the appropriate date
 
-(The TID and SID in gen 6 games use only the TinyMT RNG to be generated so the main initial seed for this purpose it pretty much useless, we are not going to use it in any way).
-Delete the existing save file if you haven't already by pressing **Up + B + X simultaneously** in the loading screen then **close Citra**. Load it again, go to Emulation -> Configure -> System -> Clock, choose ''Fixed Time'' -> Startup time. You can set the year to whatever you like, but everything else has to be set to its initial value except the hours which should be set to 13. I want my trainer card to show 2021 or later so I set the date as following:
+(The TID/SID generation in gen 6 games only uses the TinyMT RNG so the main initial seed for this purpose is not needed, we are not going to use it in any way).
+Delete the existing save file if you haven't already by pressing **Up + B + X simultaneously** in the loading screen then **close Citra**. Load it again, go to Emulation -> Configure -> System -> Clock, choose ''Fixed Time'' -> Startup time. You can set the year to whatever you like, but everything else has to be set to its initial value except the hours which should be set to 13. (The date 20xx-01-01 00:00:00 is not consistent because different NAND/Timezone combinations may affect the actual RTC)
 
-![](https://i.imgur.com/SsqF310.png)
+I want my trainer card to show 2021 or later so I set the date as following:
 
-(The original purpose was to set the hours to 0 but to solve timezone issues, the tool considers initial date the following: 20xx-01-01 13:00:00)
+![](https://i.imgur.com/1zFzQZA.png)
 
-Load the game and pause in the **language select screen**. Open CitraRNG, connect it to Citra and get the current TinyMT state consisting of 4 hex numbers:
+Load the game and pause in the **language select screen**. Open CitraRNG, connect it to Citra and get the initial TinyMT state consisting of 4 hex numbers:
 
 ![](https://i.imgur.com/MDvhpIS.png)
 
-Open the Gen 6 TID/SID to time tool and fill all the boxes with the appropriate info. Select the game version, the year you put earlier on Citra, the desired TID and SID (max 65535 for both), the max number of advances you are willing to make and of course the 4 hex numbers you got from CitraRNG. Be very careful. Double check everything especially the year and the TinyMT state. Putting any of these wrong, will result in the tool spending more time doing stuff not supposed to, not to mention the wrong results.
+In Tiny Finder, use the "**Date Searcher**" Tab and fill in the boxes with the appropriate info. 
 
-![](https://i.imgur.com/Kkz0uO6.png)
+In the "Calibration" box, paste the initial state.
 
-Press search and let the tool do the research for you - it will freeze while searching, don't worry. It shouldn't take long (considering everything was put right) until a small window pops up with all the information you need. Set the Citra RTC to whatever the tool shows you and if everything was done right, you will get the same TinyMT state on CitraRNG:
+Select the game version, the month to search results in, the max number of advances you are willing to waste, the desired TID and SID (max 65535 for both) and the maximum number of results you want the tool to find. For ID RNG, it's suggested to be 1-2 max, because the list won't be updated until all results have been found.
 
-![](https://i.imgur.com/1YelygI.png)
+### **Important**
+
+The "month" combo box in the "Settings" box, is used for the results, NOT for the calibration. You are using the month 1 (January) for calibration no matter what and then you pick the desired month as a starting point. If the tool doesn't find something in the month you picked, it's gonna keep searching in later months/years until it finds something. 
+
+Be very careful. Double check the year and the TinyMT state. Putting any of these wrong, will result in the tool searching forever and/or show wrong results.
+
+![](https://i.imgur.com/wB09iaF.png)
+
+Press "Search" or "Calibrate and search" (if the tools hasn't calibrated already) and let it do the research for you - it will freeze while searching, don't worry. It shouldn't take long (considering everything was put right). When you get a result that satisfies you, copy paste the date from the cell directly to Citra RTC (the date format is identical for that purpose) and if everything was done right, you will get the same TinyMT state in CitraRNG:
+
+![](https://i.imgur.com/BjWBpkV.png)
 ![](https://i.imgur.com/Sxvnu8Y.png)
 ![](https://i.imgur.com/KxethvD.png)
-
-If you want the tool to keep searching for more results, simply click 'Yes' otherwise click 'No' and it will retain all your inputs in case you want to go for a fresh search with a different TID/SID combo.
-
-**Important: The TinyMT initial seed for a given initial date in XY is slightly different than the one for the same date in ORAS. If you calibrate for XY, you only use these values for XY and vice versa.**
 
 # Hit the target frame/index - Get the desired TID/SID (XY)
 
