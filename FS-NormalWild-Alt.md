@@ -4,7 +4,7 @@ When thinking about TinyMT RNG in gen 6 games, the first thing that comes to min
 
 Normal Wild, Friend Safari, Fishing, Rock Smash and even stationary sync, require TinyMT manipulation in order fit the main frame into the target index.
 
-However, there are some methods like hordes and PokeRadar which are considered the easiest because this synchronization is not exactly required.
+However, there are some methods like hordes and PokeRadar which are considered easier because this synchronization is not exactly required.
 
 For both methods, we deal with the TinyMT first (by reaching our target index) and wait until we reach our target frame, then interact.
 
@@ -41,7 +41,7 @@ Since the numbers are predictable and consistent, we can abuse them to land on o
 
 This means that if I am 28 indexes away from my target inside the bag in XY, closing the bag will get me there.
 
-And since TinyMT freezes inside the bag, I can wait until I get ~100 frames away of my target and then press 'X' to exit the bag and that's pretty much it.
+And since the TinyMT state freezes inside the bag, I can wait until I get ~100 frames before my target and then press 'X' to exit the bag and that's pretty much it.
 
 Let's take an example:
 
