@@ -49,6 +49,9 @@ I want to catch a lvl 36 shiny Klefki at Route 15 and I aim for frame 15915 in 3
 
 ![](https://i.imgur.com/37uKB8X.png)
 
+First of all, don't forget to get rid of possible cooldowns before/after every battle. 5 steps are enough for grassy areas, while caves and other places require many more.
+In any case, I use a whole repel to be sure.
+
 I won't be using the Tiny Timeline Tool at all and no calibrations will be made.
 
 To advance fast, I will use the rain at Laverre City.
