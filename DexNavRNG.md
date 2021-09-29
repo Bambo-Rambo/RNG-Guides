@@ -175,7 +175,8 @@ Use the Poke – Amie again to get closer to your target index.
 When you are about 50-55 indexes away, CLOSE POKE – AMIE and enter the bag (The TinyMT state advances once when entering and then freezes).
 
 In ORAS games, pressing the ‘X’ button to exit the bag, advances the TinyMT by 15 states, 
-+1 extra advancement when the lower screen menus are reloaded so 16 in total (27 + 1 for XY if matters).
++1 extra advancement when the lower screen menus are reloaded so 16 in total (27 + 1 for XY if matters). For both games, in caves and creepy places (like Sky Pillar etc), 
+the advancements are 3 + 1.
 
 Since the numbers are predictable, we will be abusing them to avoid the process of matching the target frame with the index (the whole timeline calibration to be exact).
 (The idea is to stay inside the bag until you get close to your target MAIN frame and then exit so you can land to your target index as well).
