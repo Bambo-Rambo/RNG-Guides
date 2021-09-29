@@ -35,9 +35,11 @@ When you get close, like 50 indexes away, enter the bag.
 
 In XY, the TinyMT advances that you get when closing the bag using the 'X' button (not 'B'), are 27 + 1 extra advancement when the lower screen menus (PSS etc) are reloaded.
 
-In ORAS, this number is 15 + 1.
+In ORAS, it is 15 + 1.
 
-Since the numbers are predictable and consistent, we can abuse them to land on our target index from the bag.
+These numbers are used for common areas like routes. For caves, and creepy places in general (New Mauville, Sky Pillar etc) the number is 3 + 1.
+
+Since they are predictable and consistent, we can abuse them to land on our target index from the bag.
 
 This means that if I am 28 indexes away from my target inside the bag in XY, closing the bag will get me there.
 
