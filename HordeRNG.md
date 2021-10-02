@@ -57,6 +57,11 @@ In order to land at index 10, what I am going to do is enter the bag at index 8.
 
 At index 9, I only need one more advancement. A relible way to do this, is checking the summary of one of your Pokemon once. Select one from your party with 4 moves and attempt to teach it a new move. When prompted to replace an old one, reject it (replacing it will advance the TinyMT by more than 1 so don't do it). Also don't stay in the summary screen for too long because it will keeping advancing constantly.
 
+Other ways of advancing the TinyMT state inside the bag include:
+
+* Turning on/off the Exp Share advances by 3 for every Pokemon in your party
+* Giving one of your Pokemon a held item, advances by 3 (sometimes by 4).
+
 ![](https://i.imgur.com/t2Z769i.png)
 
 We are now at index 10 ready to get our Starly horde. **Right click on it and set it as current status**. Then go to the main window and click search. The following text will appear and confirm the characteristics of your current index. If it shows different results from the ones you are expecting, double check everything and fix the error. This is important because the tool needs to know the species and ability (HA or not) that you will be getting in order to show the correct results.
@@ -78,6 +83,9 @@ Well, we need to manipulate the TinyMT again to get the desired slot, sync and h
 If you don't care about HA, you can aim for any of these but in my case, I want it so I am looking for the appropriate index.
 
 I found it and set is as current status again. The tool can finally track down the target frame (559094/559095/559096).
+
+Tip: If you want to increase your chances of hitting the correct delay, open all 3 Pcalc Menus (Frame info, Pokemon info and Control mapping at the lower screen.
+Works fine for ORAS, kinda unstable for XY but still helpful for me.
 
 By the way the gender doesn't change due to HA but this isn't always the case.
 
