@@ -1,7 +1,5 @@
 # Gen 6 Horde Encounter RNG (Not 100% complete)
 
-### Latest Guide Update: 21 August 2021
-
 ### [Original Page](https://github.com/Bambo-Rambo/RNG-Guides/wiki/Horde-Encounter-RNG---Generation-6)
 
 # What you will need:
