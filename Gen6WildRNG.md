@@ -1,4 +1,4 @@
-# **Normal Wild RNG Generation 6**
+# **Normal Wild RNG Generation 6 (Outdated)**
 
 ### Latest Guide Update: 27 February 2021
 
