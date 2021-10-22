@@ -90,7 +90,7 @@ And since my party consists of 6 Pokemon (6 x 3 = 18), all I need to do now, is 
 
 At this time I was really lucky but sometimes the target index may be far away.
 
-See [here]() on what to do to advance TinyMT indexes faster.
+See [here](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/NormalWild-FS-RNG.md#ways-to-advance-the-tinymt-state-fast) on how to advance TinyMT indexes faster.
 
 ![](https://i.imgur.com/ovcPCW1.png)
 
