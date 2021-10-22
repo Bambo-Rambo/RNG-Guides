@@ -1,4 +1,4 @@
-# Normal Wild / Friend Safari RNG - Alternative method
+# Normal Wild - Friend Safari RNG
 
 ### Tools needed:
 * [3DS RNG Tool](https://github.com/wwwwwwzx/3DSRNGTool/releases)
@@ -73,7 +73,7 @@ Enter the bag and press "Update again.
 
 All you need to do now is reach index 46.
 
-The TinyMT state is now freezed and won't advance until we manually do it ourselves, so we have full control now.
+The TinyMT state freezes in the bag and doesn't advance until we manually do it ourselves, so we have full control now.
 
 Here are some ways to advance inside the bag:
 
@@ -98,7 +98,7 @@ See [here](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/NormalWild-FS-RNG
 
 Stay in the empty side of the bag and freeze the game (Start + Select), around ~110 main frame before your target.
 
-Tap Start and immediatly 'B' as fast as you can to exit to the X menu.
+Tap Start and then 'B' immediatly as fast as you can to exit to the X menu.
 
 It would be ideal to hold 'B' and tap Start to unfreeze, but 3ds doesn't allow simultaneous use of the two buttons.
 
