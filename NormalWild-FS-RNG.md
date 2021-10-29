@@ -117,9 +117,10 @@ Hold a D pad arrow in a direction different to the one your character is facing 
 ![](https://i.imgur.com/4VaKWy2.gif)
 
 ### Ways to advance the TinyMT state fast
-* If you can find a rainy, place you will have huge advancements per frame. In ORAS you can use the south part of Route 120. In XY, possible rainy places include: Route 8, Route 16, Route 14, Route 19, Laverre City.
+* If you can find a rainy, place you will have huge advancements per frame. In ORAS you can use the south part of Route 120. In XY, possible rainy places include: Route 8, Route 16, Route 14, Route 19, Laverre City. 
+* During wild battles at Route 17, huge advancements occur. Go there, start a random wild battle and wait until you get close. This is a consistent way in XY since rain is not guaranteed anywhere and Poke Amie doesn't always work (see below).
+* Using Poke Amie in the lower (pink) screen also advances by 1 index per frame, but it breaks if you have communicated online with other users (unfinished).
 * At route 16, there are 2 roller skaters. Stand in front of them to block their way and you will have 1 advance per 2 frames.
-* Using Poke Amie in the lower screen also advances by 1 index per frame, but it may break if you have communicated online with random users (unfinished).
 
 ### Notes
 * Inside the bag, frames advance 1 by 1 so the odd/even issue is not a thing.
