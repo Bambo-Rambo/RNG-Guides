@@ -9,5 +9,5 @@
 
 ### Other
 
-* [Outdated Normal Wild guide](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/Gen6WildRNG.md) (outdated - for reference)
+* [Normal Wild RNG](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/Gen6WildRNG.md) (outdated - for reference)
 * [DexNav Extra Info](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/ExtraInfo.md)
