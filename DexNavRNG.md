@@ -1,12 +1,12 @@
 # DexNav RNG Abuse Guide
 
-### **Because PokeRadar patch RNG was only the beginning!**
+**Because PokeRadar patch RNG was only the beginning!**
 
 After almost 7 years since ORAS came out, it's finally time to officially release 
 the tool and the method to manipulate the trickiest of the encounters in generation 6 games.
 
 Abusing the DexNav mechanics, has always been a cool way to obtain unique Pokemon which can have a random egg move (if not genderless), the Hidden Ability (if exists), 
-up to 3 perfect guaranteed IVs, a boost to the level, while some Pokemon outside of the Hoenn Pokedex, cannot be obtained otherwise.
+up to 3 perfect guaranteed IVs, various boosts to their level, while some Pokemon outside of the Hoenn Pokedex, cannot be obtained otherwise.
 
 The most impressive feature of DexNav however, is that similarly to PokeRadar in XY games, 
 special patches can be generated that result in guaranteed (square) shiny Pokemon.
@@ -14,11 +14,11 @@ special patches can be generated that result in guaranteed (square) shiny Pokemo
 Now imagine a forced shiny encounter with 3 perfect IVs and all the above.
 Really powerful and one of its kind, but also complicated to perform, so having some experience with TinyMT RNG is required.
 
-Please note that the exact egg move - and in some cases - the exact level of the resulting Pokemon cannot be predicted accurately.
-The same goes for the held item.
-We can still abuse for an egg move but we can't choose it, while the level is a bit messy but the species is not affected.
+Please note that the exact egg move and the held item are not predicted.
+The same goes for the exact level of the Pokemon if it is not fixed.
+We can still abuse for a random egg move but we can't choose it, while the level inaccuracy does not affect the species.
 
-Also the following method doesn't work for species that can be obtained from fishing or hordes, although DexNav allows it generally.
+Also the following method doesn't work for species that can be obtained by fishing, although DexNav allows it generally.
 
 This guide attempts to give some useful tips to save time and effort but don't expect to succeed without practicing.
 
@@ -26,14 +26,15 @@ I will also be using Hyperlinks with extra useful info, because I don't want to 
 It is suggested not to ignore them.
 
 ### Tools you will need
-* [Tiny Finder](https://github.com/Bambo-Rambo/TinyFinder/releases) (The latest release - The main tool for this purpose)
+* [Tiny Finder](https://github.com/Bambo-Rambo/TinyFinder/releases) (The latest commit - The main tool for this purpose)
 * [3DS RNG Tool](https://github.com/wwwwwwzx/3DSRNGTool/releases) (For calibration and IVs)
 * [Pcalc G6](https://gbatemp.net/threads/pokecalcntr-for-gen-6-the-rng-tool-suite-for-the-3ds.473221/) for 3ds or [CitraRNG](https://github.com/Admiral-Fish/CitraRNG/releases) for Citra Emulator
 
 ### Recommended
 * Max Repels
 * Leading with a synchronizer if you want a specific nature
-* [Slots for DexNav exclusive encounters](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/ExtraInfo.md#dexnav-slots).
+* [Gen 6 encounter slots](https://sites.google.com/site/pokemonslots/gen-vi)
+* [DexNav exclusive slots](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/ExtraInfo.md#dexnav-slots).
 * If on 3ds, it will be helpful to keep one side of the bag empty (We will see later why). I discarded all my Berries since I don't have any use of them
 
 ![](https://i.imgur.com/SOtYzzg.png)
@@ -44,17 +45,16 @@ Before starting, you may want to take a look at some [differences](https://githu
 
 As for the DexNav method itself, there are 2 ways of triggering a hidden encounter:
 
-The first - which will be used in this guide - is the turn method.
-
+* The first - which will be used in this guide - is the moving method.
 Every 20 steps/turns, and if there is not already an active patch shaking in the overworld, there is a 50% chance of triggering one.
-The idea is to make 19 turns (or steps), calibrate/manipulate the RNG, and in the 20th, rotate the character and succeed.
+The idea is to make 19 turns (or steps), calibrate/manipulate the RNG, rotate the character at the right time and succeed.
 
-The second is using the "Search" function in the lower screen. While this method guarantees the species, and has a higher success ratio in some circumstances, 
+* The second is using the "Search" function in the lower screen. While this method guarantees the species, and has a higher success ratio in some circumstances, 
 it's totally not recommended for a number of reasons. 
 The main issue is that it takes 2-3 seconds to generate the Pokemon and thus, a lot of things can be messed up during that time namely the delay and of course 
-the TinyMT rng state which must be fully controllable but here instead, is affected by the random NPC movements in most areas.
+the TinyMT rng state which must be fully controllable (but here instead, is affected by the random NPC movements in most areas).
 
-Tiny Finder currently supports only the former while researches are being done for the latter as well.
+Tiny Finder currently supports only the former while researches are being made for the latter as well.
 
 # Getting Started
 
@@ -68,11 +68,14 @@ On how to setup Tiny Finder depending on your preferences, please see [here](htt
 
 When you have setup the tool it's time to search, so boot the game.
 
-If on 3ds, connect your console **to 3DS RNG Tool first** then to Tiny Finder using the NTR Helper and when you reach the first cutscene, press “Update” in Tiny Finder.
+If on 3ds, connect your console **to 3DS RNG Tool first** then to Tiny Finder using the NTR Helper and when you reach the first loading cutscene, press “Update” in Tiny Finder.
+
 It will read your initial TinyMT state automaticaly, as well as your current step counter and the current chain length (both set to 0 when booting the game obviously).
 It will then update the list with possible available results to choose from.
 
-If you are doing this on Citra, use the “Date Searcher“ Tab to find the desired index way immediately and early.
+![](https://i.imgur.com/Xst0V66.png)
+
+If you are doing this on Citra, use the “Date Searcher“ Tab to find the desired index early.
 
 See [here](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/ExtraInfo.md#dexnav-results) how to read the results from Tiny Finder.
 
@@ -100,19 +103,6 @@ To check the possible results for a given chain value, set it manually to the to
 
 If you still didn't find the desired index, hard reset your system and try again.
 
-![](https://i.imgur.com/s6uOegk.png)
-
-### Important
-
-If you want to do this in noisy areas, you need to check in 3DS RNG Tool if your target index is hittable. 
-Due to Blink(+2) advances, half of the indexes are not, so you need to check beforehand.
-In the following image, index 45 is not hittable, and cannot be reached so I ignore it. 
-Also index 46 should be avoided as well since it only lasts for 12 frames.
-
-This is not the case with quiet areas where you may choose any index and we will see later how to hit it.
-
-![](https://i.imgur.com/y9QfEqq.png)
-
 ### Step 2 – Choosing the target frame
 You have found an index that satisfies you, so it’s time to focus on the main frame and choose the IVs for your target. 
 Now 3DS RNG Tool doesn’t have an option for the DexNav in the main window but we will be using the “Poke Radar” method to predict the results.
@@ -130,35 +120,26 @@ Depending on the Potential of your target index, set the “Chain Length” valu
 
 You may now pick any frame of your choice. 
 
-![](https://i.imgur.com/oZjjkQ3.png)
+![](https://i.imgur.com/dQjlsQI.png)
 
 
-# DexNav RNG
-
-Unlike Normal Wild (+6) which works fine, the delay here is higher (+14/+16/+18) so the NPCs have actually enough time to mess with your setup.
-For this reason, we need to separate the 2 methods: the “noisy” and the “quiet”.
-
-If your location is noisy, you will have to match your target frame inside your index. 
-At this time I will not explain how to do that, because it’s basic TinyMT knowledge that you are supposed to have already and also because I want to focus on an easier method.
-
-With that out of the way, we finally may begin.
+# Prepartion
 
 If you have filtered the results to the maximum, your target index is most likely very far away and you will need to advance thousands of indexes.
 The fastest way, is to fly to a rainy place (Route 120 works, just move down to the map a little and a heavy rain will start). 
-Also you can activate the Pokemon Amie function at the lower screen of your system 
-(doesn’t work if you have used it in the past, works only if you have just activated it).
+You can also activate the Pokemon Amie function at the lower screen of your system.
 
-* Rain advances by 3 indexes per frame (or by 6 per odd/even advance)
-* Pokemon Amie advances by 0,5 index per frame (or by 1 per odd/even advance)
+* Rain advances by 3 indexes per frame advance
+* Pokemon Amie advances by 0,5 indexes per frame advance (doesn't work if you have interacted with strangers in the PSS)
 * Combining these 2, results in advancements of 3,5 indexes per frame so you can approximately calculate how much time you need to stay there. Leaving a bit earlier is suggested so you won't miss your index.
 
 In the following image, I make use of both.
 
 ![](https://i.imgur.com/b1Q7r8z.png)
 
-When you get close to your target index, return and build the chain if you have to.
+When you get close to your target index, return to your location and build up the chain if you have to.
 
-Check [here](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/ExtraInfo.md#chain-build) to read how to build a successful DexNav chain without breaking it.
+Check [here](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/ExtraInfo.md#chain-build) how to build a successful DexNav chain without breaking it.
 
 (If you don't need to build a chain, I suggest returning around ~800 indexes before your target. If you will be building a chain, the suggested number is ~1500).
 
@@ -170,32 +151,61 @@ In any case, you should stand somewhere OUTSIDE of grass or water because when t
 Press the Update button to refresh the Step Counter, make the remaining steps/turns until it reaches 19 (will be marked as red in that case)
 and once again make sure you are on the right spot.
 
-Use the Poke – Amie again to get closer to your target index. 
+### Finding the noise for your current spot
+
+When closing the X menu and the character is free to move again, the same goes for the NPCs whose influence (blinking/moving) returns.
+
+For Normal Wild the tool takes that into account (since the suggested spots are specific), but since your position in DexNav is different every time, you have to calculate the noise yourself.
+
+Press the 'X' button to open the menu and then freeze the game by pressing Start + Select.
+
+While the game is freezed, hold down the 'X' button and tap select 10 times, in order to close the menu slowly.
+
+![](https://i.imgur.com/dG1w3Hk.gif)
+
+![](https://i.imgur.com/HwSiHXj.png)
+
+As you can see, I start unpausing at frame 40113. 
+The crucial frame is (40113 + 10) = 40123.
+
+At that frame, I notice that the TinyMT state advanced by **2** indexes (expected since there are 2 running NPC nearby).
+
+This means that I need to set the noise to 2, in order to land at the correct index when I will be doing the actual RNG.
+
+# DexNav RNG
+
+Use the Poke – Amie or let the NPCs advance for you.
 
 When you are about 50-55 indexes away, CLOSE POKE – AMIE and enter the bag (The TinyMT state advances once when entering and then freezes).
 
-In ORAS games, pressing the ‘X’ button to exit the bag, advances the TinyMT by 15 states, 
-+1 extra advancement when the lower screen menus are reloaded so 16 in total (27 + 1 for XY if matters). For both games, in caves and creepy places (like Sky Pillar etc), 
-the advancements are 3 + 1.
+In ORAS games, pressing the ‘B’ button to exit the bag, lands you to the X menu. 
+During that time, the TinyMT state advances by 15 (27 for XY if matters). 
+For both games, in caves and creepy places (like Sky Pillar etc), those advancements are 3.
 
-Since the numbers are predictable, we will be abusing them to avoid the process of matching the target frame with the index (the whole timeline calibration to be exact).
-(The idea is to stay inside the bag until you get close to your target MAIN frame and then exit so you can land to your target index as well).
+Since the numbers are predictable, we will be abusing them to avoid the process of matching the target frame with the target index (the whole timeline calibration to be exact).
 
-For what described above, the last thing to do, is advance inside the bag until you are 16 indexes away.
+The idea is to stay inside the bag until you get close to your target MAIN frame and then exit so you can land to your target index as well.
 
-(Please note that some places like Mt. Pyre summit, advance 17 indexes instead of 16. Make a test for your location to be sure)
+For what described above, the last thing to do, is advance inside the bag until we are 15 indexes away.
+
+(Please note that some places like Mt. Pyre summit, those bag advances are 16 instead of 15. Make a test for your current location/spot to be sure)
 
 Here are some simple ways to advance slowly inside the bag:
 
 * Attempting to teach one of your Pokemon a new move and reject it, advances by 1 (In fact what advances here, is checking the summary screen of the Pokemon). 
-Don’t actually teach the move otherwise it will advance more.
+Don’t actually teach the move otherwise it will advance more. If you stay in the move replace screen for too long, it will advance by 1 again.
+(Helpful for 2 advances but be careful).
 * Giving your Pokemon a held item, usually advances by 3. (Rarely by 4, not sure when).
 * Turning on/off the EXP Share advances by 3 * number of Party. This means that if you have 4 Pokemon in your party, using the Exp Share, will advance 3 * 4 = 12 indexes etc
-Now that you are 16 indexes away, all you need to do is wait until you get ~100 frames before your target.
-The bag takes an inconsistent number of frames to close, but exiting 100 frames earlier, always works for me.
+
+Now that you are 15 indexes away, all you need to do is wait until you get ~110 frames before your target.
+The bag takes an inconsistent number of frames to close, but exiting 110 frames earlier, always works for me.
 
 Note that inside the bag, the frames advance 1 by 1 instead of 2 by 2 and the frame type (odd/even) you will be at, is the one you were when exited. (The opposite goes for Citra).
-This means that if your target frame is 22791, you need to exit the bag at an odd frame (22691 in my case).
+This means that if your target frame is 55768, you need to exit the bag at an even frame (55658 in my case).
+
+This is not exactly controllable because, the 'B' and "Start" buttons don't work together. 
+Which means that, when freezed, you need to tap Start and immediately B to exit as fast as you can.
 
 I also mentioned in the beginning that you should have a side of your bag empty.
 This is neccessary because when an item is highlighted, pressing either start or select, or both to pause, prompts you to sort the item list.
@@ -206,11 +216,14 @@ If there are no items though, you can pause without any trouble which is what I 
 
 Citra is not affected. You can pause wherever you want since the hotkey is not used elsewhere).
 
-![](https://i.imgur.com/b9u8WPz.png)
+![](https://i.imgur.com/r4Qib8z.png)
 
-Exit the bag by pressing ‘X’ (not ‘B’), freeze the game, and keep tapping select until you reach your target frame.
+Exit the bag by pressing 'B', freeze the game in the X menu, and keep tapping select until you reach **10** frames before your target.
+All you need to do now, is what you did to find the noise and rotate your character.
 
-All you need to do now, is rotate your character (stepping has a different delay, around 22 – not recommended).
+Hold 'X' and tap select 10 times until you reach your target frame.
+
+If the place is noisy, you will see the TinyMT state changing, don't worry because the tool has already taken this into consideration.
 
 Note that when rotating, you should not take an extra step to the new direction because this will result in hitting a later index.
 
@@ -219,22 +232,25 @@ but what helps me a lot, is abuse the Pcalc lag by having the stats menu (Start 
 
 In any case it requires practice.
 
-If everything done right, you will activate the patch at the expected tile (8, -6 in my case) and all you need to now is approach slowly and start the encounter.
+If everything done right, you will activate the patch at the expected tile (-8, -3 in my case) and all you need to now is approach slowly and start the encounter.
 
-![](https://i.imgur.com/Q1VLK4e.png)
+![](https://i.imgur.com/wgAomDF.png)
 
-![](https://i.imgur.com/0xRWZcj.png)
+![](https://i.imgur.com/mnEEL7d.png)
 
 ### Things to NEVER forget
 
-* As said earlier, for noisy places you need to make sure that your target index is reachable. The bag method is very incosistent in that case so you 're gonna have to do the whole process the classic old way.
-* The spot you will be standing on when triggering the patch, requires background search. If there is an NPC next to the character, when pressing "A" to rotate, you may speak to them accidentaly. The same goes for spots where an item can be interacted like a Route sign or a water tile nearby which will prompt you to surf inside it.
-* When you have stood on your spot, make sure that your current step counter value is 19. If neccessary, rotate the character as much as needed.
-* If you have used Pokemon Amie, make sure to turn it off when entering the bag. If it remains in queue, it will start advancing again like crazy when exiting.
-* Close the bag at an odd frame number if your target frame is odd and vice versa. If you are using your party instead, do the opposite.
+* Exit the bag by pressing 'B' to land in the menu. Pressing 'X' instead, would get you to the overworld, and if the place is noisy, the NPCs would start affecting immediately before you could get control of your character.
+* Don't forget to find the noise for your current spot. The spot itself, requires background search. 
+If there is an NPC next to the character, when pressing "A" to rotate, you may speak to them accidentaly. 
+The same goes for spots where an item can be interacted like a Route sign or a water tile nearby which will prompt you to surf inside it.
+* When you have stood on your spot, make sure that your current step counter value is 19 (red marked). 
+If neccessary, reset the counter (be careful not to trigger a patch accidentaly) and rotate the character as much as needed to set it from the beginning.
+* If you have used Pokemon Amie, make sure to turn it off when entering the bag. 
+If it remains in queue, it will start advancing again like crazy when exiting.
 * Sometimes after tracking down the target index, I forget to reseed for a nice spread.
 
-[Info about Noisy Places](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/ExtraInfo.md#noisy-places)
+[Suggested ways to deal with unstable delays](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/ExtraInfo.md#unstable-delays)
 
 [Info about Special Places](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/ExtraInfo.md#special-places-caves-water-route-111-desert)
 
