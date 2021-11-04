@@ -166,9 +166,9 @@ While the game is freezed, hold down the 'X' button and tap select 10 times, in 
 ![](https://i.imgur.com/HwSiHXj.png)
 
 As you can see, I start unpausing at frame 40113. 
-The crucial frame is (40113 + 10) = 40123.
+The crucial one is (40113 + 10) = 40123.
 
-At that frame, I notice that the TinyMT state advanced by **2** indexes (expected since there are 2 running NPC nearby).
+At that frame, I notice that the TinyMT state advanced by **2** indexes (expected since there are 2 running NPCs nearby).
 
 This means that I need to set the noise to 2, in order to land at the correct index when I will be doing the actual RNG.
 
