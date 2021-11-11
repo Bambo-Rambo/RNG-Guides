@@ -27,7 +27,7 @@ The 2 states need to be manipulated together in order to get the desired Pokemon
 The main state (MT) advances by 2 per frame or 60 per second, while TinyMT is more complicated and is affected by multiple factors 
 (NPC movements, character blinking etc).
 
-Until recently, a special timeline was required to combine the 2 states and match the main state with the TinyMT state.
+Until recently, a special timeline was required to combine those 2 and match the main state with TinyMT state.
 
 But with this new method, all we gotta do, is deal with TinyMT alone first, and then wait until we reach our target main frame to get the correct stats and shiny.
 
@@ -59,7 +59,7 @@ Then stand in the recommended spot according to the following albums:
 * [XY](https://imgur.com/a/pGk0bhM)
 * [ORAS](https://imgur.com/a/B3URhjo)
 
-You can't trigger encounters directly from booting the game so a few steps are required to get rid of that restriction (around 5 for grass and more for caves).
+You can't trigger encounters directly from booting the game so a few steps are required to get rid of that restriction (around 5 for grass/flowers and more for caves).
 
 For consistency purposes, I always waste a whole repel.
 
@@ -70,7 +70,7 @@ In Tiny Finder, select the location (very important for accurate results) or che
 
 In the 2 albums above, there is also a number for every location (+3 /+15 /+27).
 Set the "Min Index" value according to them, I will explain later why.
-My location is Pokemon Village so I set it to 27.
+My location is Pokemon Village so I set to 27.
 
 Finally, fill in the filters of the 3rd box in Tiny Finder to search for your target and press "Update".
 
