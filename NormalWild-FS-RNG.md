@@ -2,7 +2,7 @@
 
 ### Tools needed:
 * [3DS RNG Tool](https://github.com/wwwwwwzx/3DSRNGTool/releases)
-* [Tiny Finder](https://github.com/Bambo-Rambo/TinyFinder#readme) (The latest build)
+* [Tiny Finder](https://github.com/Bambo-Rambo/TinyFinder#latest-commit) (The latest commit)
 * [Pcalc G6](https://gbatemp.net/threads/pokecalcntr-for-gen-6-the-rng-tool-suite-for-the-3ds.473221/) (Retail) or [CitraRNG](https://github.com/Admiral-Fish/CitraRNG/releases) (Emulator)
 
 ### Recommended in game
