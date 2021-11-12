@@ -10,7 +10,7 @@
 * Shiny Charm if going for shinies
 * One completely empty side in the bag. I discarded all my berries since I don't need them
 
-![](https://i.imgur.com/B19lgMa.png)
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Wild/Wild1.png)
 
 ### Introduction
 
@@ -52,7 +52,7 @@ The gender of the target Pokemon may be affected if you plan on syncing the natu
 
 Connect with Tiny Finder as well (Generator -> Extra -> NTR Helper).
 
-![](https://i.imgur.com/R1QI3Af.png)
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Wild/Wild2.png)
 
 When in game, use a repel and start walking around (preferably inside the grass) until it is consumed.
 Then stand in the recommended spot according to the following albums:
@@ -80,7 +80,7 @@ All the following indexes generate successful (yellow marked) encounters with sl
 
 Since index 46 is very close, I am gonna aim for that.
 
-![](https://i.imgur.com/kUJ1nyd.png)
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Wild/Wild3.png)
 
 Enter the bag and press "Update" again.
 
@@ -111,7 +111,7 @@ At this time I was really lucky but sometimes the target index may be far away.
 
 See [here](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/NormalWild-FS-RNG.md#ways-to-advance-the-tinymt-state-fast) on how to advance TinyMT indexes faster.
 
-![](https://i.imgur.com/ovcPCW1.png)
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Wild/Wild4.png)
 
 ### Finalizing - Hitting the target Pokemon
 
@@ -137,7 +137,7 @@ Do that 8 times and your current frame will be -2 from your target (the game is 
 
 Hold an arrow from the D pad in a direction different to the one your character is looking and press 'A' to rotate the character and trigger the encounter.
 
-![](https://i.imgur.com/4VaKWy2.gif)
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Wild/Wild5.gif)
 
 ### Ways to advance the TinyMT state fast
 * If you can find a rainy, place you will have huge advancements per frame. In ORAS you can use the south part of Route 120. In XY, possible rainy places include: Route 8, Route 16, Route 14, Route 19, Laverre City. 
