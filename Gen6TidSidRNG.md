@@ -45,49 +45,76 @@ Be very careful. Double check the year and the TinyMT state. Putting any of thes
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/ID/ID3.png)
 
-Press "Search" or "Calibrate and search" (if the tools hasn't calibrated already) and let it do the research for you - it will freeze while searching, don't worry. It shouldn't take long (considering everything was put right). When you get a result that satisfies you, copy paste the date from the cell directly to Citra RTC (the date format is identical for that purpose) and if everything was done right, you will get the same TinyMT state in CitraRNG:
+Press "Search" or "Calibrate and search" (if the tools hasn't calibrated already) and let it do the research for you - it will freeze while searching, don't worry. 
+
+It shouldn't take long (considering everything was done right so far). 
+
+When you get a result that satisfies you, copy paste the date from the cell directly to Citra RTC (the date format is identical for that purpose) 
+and if everything was done right, you will get the same TinyMT state in CitraRNG:
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/ID/ID4.png)
-![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/ID/ID5.png)
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/ID/ID6.png)
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/ID/ID5.png)
 
 ### Hit the target frame/index - Get the desired TID/SID (XY)
 
-If you are doing this in X Y, you still have work to do. Choose your character's gender and name and advance to the following screen:
+If you are doing this in X/Y, you still have work to do. Choose your character's gender and name and pause at the following screen:
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/ID/ID7.png)
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/ID/ID8.png)
 
-Update CitraRNG to show you the new TinyMT state, open the Tiny Timeline Tool and set it as shown in the above picture. Once you put your current TinyMT state, **you are not going to change it again**. Start advancing frame by frame and when the TinyMT state changes, put the (frame - 2) in the first 'Main RNG Frame' box.
+Update CitraRNG to show you the new TinyMT state, open the Tiny Timeline Tool and set it as shown in the above picture. 
+
+Once you put your current TinyMT state, **you are not going to change it again**. 
+
+Start advancing frame by frame and when the TinyMT state changes, put the (frame's value - 2) in the first 'Main RNG Frame' box.
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/ID/ID9.png)
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/ID/ID10.png)
 
 As you can see, frame 5805 was the last one before the TinyMT state advances so I put (5805 - 1) = 5804 in the box (remember the odd/even issue).
 
-I need to follow the same process 3 more times **without changing the 4 hex numbers** in the 'Calibration' column. After some time and patience, I click 'Create' and the tool shows my current timeline. It can predict the main frames in which the TinyMT state is going to change. For example in the following image, the TinyMT 'index 10' will last for 52 main frames (6572-6622).
+I need to follow the same process 3 more times **without changing the 4 hex numbers** in the 'Calibration' column. 
+
+After some time and patience, I click 'Create' and the tool shows my current timeline. 
+
+It can predict the main frames in which the TinyMT state is going to change. 
+For example in the following image, the TinyMT 'index 10' will last for 52 main frames (6572-6622).
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/ID/ID11.png)
 
-Time to find the frame range in which we are going to Hold 'A' so we can hit our target TID/SID. Return to the Main Window in 3DS RNG Tool and paste the TinyMT index you have in the Tiny Timeline Tool. Click 'Calculate' and find your target index.
+Time to find the frame range in which we are going to Hold 'A' so we can hit our target TID/SID. 
+
+Return to the Main Window in 3DS RNG Tool and paste the TinyMT index you have in the Tiny Timeline Tool. 
+
+Click 'Calculate' and find your target index.
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/ID/ID12.png)
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/ID/ID13.png)
 
-I aim for index 108 so I finally return to the Tiny Timeline Tool, check the **'Consider Delay'** box, change the 'Target Frame' to a number of my choice (say 20000 - doesn't matter/mainly to expand the timeline) and click 'Create'. I am looking for the number 108 **in the 'Hit' column**. 
+I aim for index 108 so I finally return to the Tiny Timeline Tool, check the **'Consider Delay'** box, change the 'Target Frame' to a number of my choice (say 20000 - doesn't matter, I do it in order to expand the timeline) and click 'Create'. 
 
-There we go. Holding 'A' between frames 15014-15094 (at index 99) will send me to index 108 (because of the delay until the TID/SID are generated) which is my target index. Let's see what we can do:
+I am looking for the number 108 **in the 'Hit' column**. 
+
+There we go. Holding 'A' between frames 15014-15094 (at index 99) will send me to index 108 (because of the delay until the TID/SID are generated) which is my target index.
+
+Let's see what we can do:
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/ID/ID14.png)
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/ID/ID15.png)
 
 When Fletchling appears on the screen, the TinyMT freezes and doesn't change until the player wakes up. This is where the TID/SID are generated so you can confirm it a bit earlier without waiting to check your Trainer Card.
 
-If you find this complicated, you can always go with Citra save states. When holding 'A' in the previous screen to finalize the process, we saw that the TinyMT advances about 6-9 indexes so we can use it as the base delay and abuse the save states until we hit our target.
+If you find this complicated, you can always use the save states. 
+When holding 'A' in the previous screen to finish the process, we saw that the TinyMT advances about 6-9 indexes so we can use it as the base index delay and abuse the save states until we hit our target.
 
 ### Hit the target frame/index - Get the desired TID/SID (ORAS)
 
-Things are ridiculously easier if you do this in ORAS games. The TinyMT advances by 10 until you choose the gender and then each time you enter in the name selection screen it advances just by 1 in a way similar to gen 5 and gen 7 games. Just keep choosing 'NO' whenever the professor asks you to confirm your name. When typing your name, you must be in your target TinyMT index:
+Things are ridiculously easier if you do this in ORAS games. The TinyMT state advances by 10 until you choose the gender and then each time you enter in the name selection screen it advances just by 1 in a way similar to gen 5 and gen 7 games. 
+
+Just keep choosing 'NO' whenever the professor asks you to confirm your name. 
+
+When typing your name, you must be in your target index:
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/ID/ID16.png)
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/ID/ID17.png)
