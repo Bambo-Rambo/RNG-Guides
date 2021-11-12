@@ -37,7 +37,7 @@ It is suggested not to ignore them.
 * [DexNav exclusive slots](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/ExtraInfo.md#dexnav-slots).
 * If on 3ds, it will be helpful to keep one side of the bag empty (We will see later why). I discarded all my Berries since I don't have any use of them
 
-![](https://i.imgur.com/SOtYzzg.png)
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/DexNav/DexNav1.png)
 
 # Introduction
 
@@ -73,7 +73,7 @@ If on 3ds, connect your console **to 3DS RNG Tool first** then to Tiny Finder us
 It will read your initial TinyMT state automaticaly, as well as your current step counter and the current chain length (both set to 0 when booting the game obviously).
 It will then update the list with possible available results to choose from.
 
-![](https://i.imgur.com/Xst0V66.png)
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/DexNav/DexNav2.png)
 
 If you are doing this on Citra, use the “Date Searcher“ Tab to find the desired index early.
 
@@ -120,7 +120,7 @@ Depending on the Potential of your target index, set the “Chain Length” valu
 
 You may now pick any frame of your choice. 
 
-![](https://i.imgur.com/dQjlsQI.png)
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/DexNav/DexNav3.png)
 
 
 # Prepartion
@@ -135,7 +135,7 @@ You can also activate the Pokemon Amie function at the lower screen of your syst
 
 In the following image, I make use of both.
 
-![](https://i.imgur.com/b1Q7r8z.png)
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/DexNav/DexNav4.png)
 
 When you get close to your target index, return to your location and build up the chain if you have to.
 
@@ -161,9 +161,9 @@ Press the 'X' button to open the menu and then freeze the game by pressing Start
 
 While the game is freezed, hold down the 'X' button and tap select 10 times, in order to close the menu slowly.
 
-![](https://i.imgur.com/dG1w3Hk.gif)
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/DexNav/DexNav5.gif)
 
-![](https://i.imgur.com/HwSiHXj.png)
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/DexNav/DexNav6.png)
 
 As you can see, I start unpausing at frame 40113. 
 The crucial one is (40113 + 10) = 40123.
@@ -216,7 +216,7 @@ If there are no items though, you can pause without any trouble which is what I 
 
 Citra is not affected. You can pause wherever you want since the hotkey is not used elsewhere).
 
-![](https://i.imgur.com/r4Qib8z.png)
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/DexNav/DexNav7.png)
 
 Exit the bag by pressing 'B', freeze the game in the X menu, and keep tapping select until you reach **10** frames before your target.
 All you need to do now, is what you did to find the noise and rotate your character.
@@ -234,9 +234,9 @@ In any case it requires practice.
 
 If everything done right, you will activate the patch at the expected tile (-8, -3 in my case) and all you need to now is approach slowly and start the encounter.
 
-![](https://i.imgur.com/wgAomDF.png)
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/DexNav/DexNav8.png)
 
-![](https://i.imgur.com/mnEEL7d.png)
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/DexNav/DexNav9.png)
 
 ### Things to NEVER forget
 
