@@ -139,21 +139,21 @@ Hold an arrow from the D pad in a direction different to the one your character 
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Wild/Wild5.gif)
 
-### Ways to advance the TinyMT state fast
-* If you can find a rainy, place you will have huge advancements per frame. In ORAS you can use the south part of Route 120. In XY, possible rainy places include: Route 8, Route 16, Route 14, Route 19, Laverre City. 
-* During wild battles at Route 17, huge advancements occur. Go there, start a random wild battle and wait until you get close. This is a consistent way in XY since rain is not guaranteed anywhere and Poke Amie doesn't always work (see below).
-* Using Poke Amie in the lower (pink) screen also advances by 1 index per frame, but it breaks if you have communicated online with other users (unfinished).
-* At route 16, there are 2 roller skaters. Stand in front of them to block their way and you will have 1 advance per 2 frames.
-
 ### Summary
 
 * Waste a repel to increase the chances of succeeding.
 * Stay in the recommended spot and enter the bag.
-* Inside the bag, advance until you are 'n' indexes away from your target. The value of 'n' for every location can be found [here](https://imgur.com/a/pGk0bhM) for XY 
+* Inside the bag, advance until you are 'n' indexes away from your target. The value of 'n' varies depending on your location. See [here](https://imgur.com/a/pGk0bhM) for XY 
 and [here](https://imgur.com/a/B3URhjo) for ORAS.
-* When 'n' indexes and ~110 frames away from your targets, press 'B' to exit the bag, and advance until you are 10 frames away.
+* When 'n' indexes and ~110 frames away from your target, press 'B' to exit the bag, and advance until you are 10 frames away.
 * Hold 'X' and advance 8 (or 10) times using the Select button.
 * Rotate the character and succeed.
+
+### Ways to advance the TinyMT state fast
+* If you can find rain somewhere, you will have huge advances per frame. In ORAS you can use the south part of Route 120. In XY, possible rainy places include: Routes 8, 14, 16, 19, Laverre City. 
+* During wild battles at Route 17, there are big index jumps. Start a random wild battle and wait there until you get close. This is a consistent way in XY since rain is not guaranteed anywhere and Poke Amie doesn't always work (see below).
+* Using Poke Amie in the lower (pink) screen also advances by 1 index per frame, but it breaks if you have communicated online with other users (more to say here).
+* At route 16, there are 2 roller skaters. Stand in front of them to block their way and you will have 1 advance per 2 frames.
 
 ### Notes
 * Inside the bag, frames advance 1 by 1 so the odd/even issue is not a thing.
