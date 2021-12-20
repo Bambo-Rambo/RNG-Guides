@@ -80,25 +80,23 @@ Ignore the “Noise” button for now.
 
 “Search Level” is the number of times you have encountered the target Pokemon (shown in the DexNav screen for each Pokemon - caps at 999). Suggested value: 999.
 
-“Chain” is the current chain length (caps at 100). Suggested value: 4.
+“Chain” is the current chain length (caps at 99). Suggested value: 4.
 
 **Third Tab (Preferences)**
 
 In the “Type” Combobox, choose the desired Encounter Type. 
-Normal is for Pokemon that can also appear in the area with Normal Wild RNG, while DexNav is for DexNav exclusives (3 for each area - Some areas don't have excluives).
+Normal is for default Pokemon that can occur as wild encounters in the area, while DexNav is for DexNav exclusives (3 for each area - Some areas don't have excluives).
 
 Pick the desired slot(s) in the second combobox. 
 For DexNav Pokemon, the slots can be found in the beginning of the guide.
 
 In the third combobox, fill in the rest of the filters to your preference.
 
-“Success” is for a successfull patch trigger (Works only if you rotate when step counter = 19. Will be explained later in the guide).
-
 “Shiny” for a guaranteed shiny patch.
 
 “HA” for Hidden Ability“ and “Egg move“ for an exclusive breeding move than cannot be obtained otherwise.
 
-“Level Boost” for a +10 to the Level of the resulting Pokemon.
+“Level Boost” for a +10 to the Level of the resulting Pokemon (exclamation mark in the lower DexNav screen when occurs).
 
 As for “Potential” and “Flute”, the former is the guaranteed perfect IVs you will get for an index (caps at 3), 
 while the latter is about the Level drop/boost if the White/Black Flute is activated for that location (caps at 4). 
@@ -122,7 +120,7 @@ We will see later in the guide how this number varies and how to mess with it.
 
 Potential and Flute were explained above.
 
-### Chain Build
+### Chain Building
 
 To build a DexNav chain, all you need to do is defeat or capture Hidden Pokemon.
 
@@ -136,11 +134,10 @@ Use a repel to prevent wild encounters and approach the Pokemon slowly using the
 
 The chain length value is now +1.
 
-Things that break a chain include:
+Things that will break the chain include:
 
-* Scaring the Pokemon by running/walking fast towards it
+* Not encountering a hidden Pokemon that has appeared in the overworld either by leaving the area / waiting too long until it disappears / scaring it by running/walking fast towards it
 * Running away from a battle
-* Not encountering a hidden Pokemon that has appeared in the overworld either by leaving the area or by waiting too long until it disappears
 
 If you use the Search button to scan for hidden Pokemon and nothing is found, the chain does **NOT** break
 
@@ -153,21 +150,40 @@ The 2 following ways can be seen as a workaround to deal with that:
 I suggest at least 2 in order to solve the odd/even issue while 3 can deal with the instability.
 
 * As I said, the general system's performance affects the delay.
-What I tried, was opening the 2 Pcalc overlays (frame info and wild stats) around 2000 frames before exiting the bag and keep them visible until I rotate the character.
+What I tried, was turn on the 2 Pcalc overlays (frame info and wild stats) around 2000 frames before exiting the bag and keep them visible until I rotate the character.
 I noticed that this always gives me stable delays for quiet places with no NPCs (even if I have used the rain earlier).
 Noisy ones may not be stable because extra advances caused by the NPC influence, might affect the performance.
 
-### Special Places (caves, water, Route 111 desert)
+### Special Places
 
-Here are 2 reasons why these places are harder to DexNav RNG on:
+Places that have no grass behave differently. 
+These include caves, water routes, places like Sky Pillar, Mt Pyre inside, Route 111 etc 
+and the advances by exiting the bag for them [are usually 3](https://imgur.com/a/B3URhjo).
+
+For the most part, they can trigger random wild encounters by moving, almost everywhere. 
+
+* If your current spot can trigger a wild encounter (regardless of whether you have an active repel or not), when moving, 2 rng advances may occur. 
+This means that you need to increase the "Noise" by 2 in order to get accurate results.
+For example, when you want to generate a DexNav patch in a water route, if your current spot is land, you don't need to edit the Noise, 
+otherwise, if your current spot is inside the water, you may need to increase it by 2. 
+This is not always the case and you need to test yourself depending on your exact tile in the map.
+
+* In grassy areas, we saw that the possilbe ring inside where a patch can be generated, is [-9, 9] for both vertical and horizontal. 
+This is not the case with special places, where the ring, is apparently affected by your exact tile on the map and surely enough, is smaller than [-9, 9].
+Generally speaking, I succeeded more frequently, by aiming for indexes whose coordinates are close to 0 for either the X or Y axis.
+For example, indexes with values [-7, 1] or [8, 0], are safer than indexes like [9 ,5] or [-6, 7].
+If you have setup Citra, you can try multiple indexes quickly using the Date Searcher, until you find a successful one.
+If you want to do this on 3ds, you should check the coordinates of your target index, 
+and use the Date Searcher in order to find similar indexes with the same coordinates and test them on Citra.
+If they are successful, you have high chances of succeeding on 3ds as well.
+In terms of difficulty, from the easiest to the hardest ones: water routes < creepy buildings < caves < route 111
 
 * The hidden Pokemon does not stay in the same spot but instead keeps moving constantly inside a new, specific ring. It also disapperars way easier especially if it can't move inside the ring due to your character's presence. Don't even try to build a chain in those areas. At chain 4, the Pokemon shakes literally 3 times before disappearing and you don't have enough time to approach it anyway. For whatever reason, GF decided to make this completely unfair.
-* The biggest issue about these places is the small ring in which a patch can be generated in. While for grass is [-9, 9] for both vertical and horizontal, for special places it appears to be way smaller and apparently it varies for every tile in the map. To make it work on 3ds, I use an index on Citra with the same coordinates, and start searching for a tile that can generate my patch. I then use that spot on 3ds to make it work. This requires extra search on the user's side depending on the situation. To make your life easier, keep running around and check where most of the random patches are generated. This will give you a better idea of what to aim for.
 
 ### Practicing
 
 The best places for that, are hands down the Mirage Spots (except caves of course).
-They are quiet places with no NPC, the bag advancements are the standar +15 and they include large grass tables which give the user a lot of possible patch coordinates to aim for.
+They are quiet places with no NPCs, the bag advances are the standar +15 and they include large grass tables which give the user a lot of possible patch coordinates to aim for.
 They also don't have DexNav exclusive Pokemon that affect the slots.
 
 Practice, practice, practice.
@@ -175,7 +191,7 @@ Keep aiming for non shiny indexes and try to hit them. Play around with the Pcal
 
 On 3ds you can use the NTR Helper to keep track of the steps and chain length.
 
-On Citra you can find the target index easily without building a chain.
+On Citra you can find great and early indexes easily without the need to build a chain.
 
 Try everything that you may find useful.
 
