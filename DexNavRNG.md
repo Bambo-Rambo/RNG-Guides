@@ -30,7 +30,7 @@ It is suggested not to ignore them.
 * [3DS RNG Tool Fork](https://ci.appveyor.com/project/Bambo-Rambo/3dsrngtool/build/artifacts)
 * [Pcalc G6](https://gbatemp.net/threads/pokecalcntr-for-gen-6-the-rng-tool-suite-for-the-3ds.473221/) for 3ds or [CitraRNG](https://github.com/Admiral-Fish/CitraRNG/releases) for Citra Emulator
 
-(If it shows the message **"The build job does not contain any artifacts"** for either 3DS RNG Tool or Tiny Finder, contact me on discord or open an issue here)
+(If you get the message **"The build job does not contain any artifacts"** for either 3DS RNG Tool or Tiny Finder, contact me on discord or open an issue here)
 
 ### Recommended
 * Max Repels
@@ -95,7 +95,7 @@ In that case, your target Pokemon is also guaranteed to have the following:
 Of course shininess is affected in a positive way as well.
 
 Also starting at 0, and for every +5 added, [5, 10, 15, 20, 25 etc] the target Pokemon is guaranteed to have a +1 boost to its level. 
-This doesn't affect the standar +10 that you may get. In fact, they can be combined resulting in a possible +30 Level Boost when the chain length tops at 100).
+This doesn't affect the standar +10 that you may get. In fact, they can be combined resulting in a possible +29 Level Boost when the chain length tops at 99).
 
 For what described above, the optimal chain length number is 4.
 Takes 2-3 minutes to build and is totally worth it unless you are looking for a low level Pokemon so the +10 boost should be avoided.
@@ -110,7 +110,7 @@ You have found an index that satisfies you, so it’s time to focus on the main 
 
 In 3DS RNG Tool, choose "DexNav" and set up the tool **according to your target index** from Tiny Finder.
 
-My target index guarantees shininess, has the Hidden Ability, successfuly syncs the Nature and it gives 3 perfect IVs (potential) so I set up 3DS RNG Tool like this:
+As shown above, my index guarantees shininess, has the Hidden Ability, successfuly syncs the Nature and it gives 3 perfect IVs (potential) so I set up 3DS RNG Tool like this:
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/DexNav/DexNav3.png)
 
@@ -129,7 +129,7 @@ The fastest way, is to fly to a rainy place (Route 120 works, just move down to 
 You can also activate the Pokemon Amie function at the lower screen of your system.
 
 * Rain advances by 3 indexes per frame advance
-* Pokemon Amie advances by 0,5 indexes per frame advance (doesn't work if you have interacted with strangers in the PSS)
+* Pokemon Amie advances by 0,5 indexes per frame advance (apparently it doesn't work if you have interacted with strangers in the PSS)
 * Combining these 2, results in advancements of 3,5 indexes per frame so you can approximately calculate how much time you need to stay there. Leaving a bit earlier is suggested so you won't miss your index.
 
 In the following image, I make use of both.
