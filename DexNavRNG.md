@@ -26,9 +26,11 @@ I will also be using Hyperlinks with extra useful info, because I don't want to 
 It is suggested not to ignore them.
 
 ### Tools you will need
-* [Tiny Finder](https://github.com/Bambo-Rambo/TinyFinder/releases) (The latest commit - The main tool for this purpose)
-* [3DS RNG Tool](https://github.com/wwwwwwzx/3DSRNGTool/releases) (For calibration and IVs)
+* [Tiny Finder](https://ci.appveyor.com/project/Bambo-Rambo/tinyfinder/build/artifacts) (The latest commit - The main tool for this purpose)
+* [3DS RNG Tool Fork](https://ci.appveyor.com/project/Bambo-Rambo/3dsrngtool/build/artifacts)
 * [Pcalc G6](https://gbatemp.net/threads/pokecalcntr-for-gen-6-the-rng-tool-suite-for-the-3ds.473221/) for 3ds or [CitraRNG](https://github.com/Admiral-Fish/CitraRNG/releases) for Citra Emulator
+
+(If it shows the message **"The build job does not contain any artifacts"** for either 3DS RNG Tool or Tiny Finder, contact me on discord or open an issue here)
 
 ### Recommended
 * Max Repels
@@ -105,22 +107,19 @@ If you still didn't find the desired index, hard reset your system and try again
 
 ### Step 2 – Choosing the target frame
 You have found an index that satisfies you, so it’s time to focus on the main frame and choose the IVs for your target. 
-Now 3DS RNG Tool doesn’t have an option for the DexNav in the main window but we will be using the “Poke Radar” method to predict the results.
 
-Change the game version to either X or Y in the main window of 3DS RNG Tool to make the “Poke Radar” category appear. 
-If you are aiming for a forced shiny index, set the delay to +14 otherwise set it to +16.
+In 3DS RNG Tool, choose "DexNav" and set up the tool **according to your target index** from Tiny Finder.
+
+My target index guarantees shininess, has the Hidden Ability, successfuly syncs the Nature and it gives 3 perfect IVs (potential) so I set up 3DS RNG Tool like this:
+
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/DexNav/DexNav3.png)
+
+If your target is Unown (Mirage Cave only), check the corresponding box to make it show the form - letter for each frame.
+
 Note that the delay tends to be a bit unstable sometimes so it’s better to search for 3-5 consecutive identical frames.
 This will also solve the odd/even frame issue.
 
-Depending on the Potential of your target index, set the “Chain Length” value in 3DS RNG Tool as following:
-* 1-19 if Potential = 0
-* 20-39 if Potential = 1
-* 40-59 if Potential = 2
-* 60-100 if Potential = 3
-
 You may now pick any frame of your choice. 
-
-![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/DexNav/DexNav3.png)
 
 
 # Prepartion
