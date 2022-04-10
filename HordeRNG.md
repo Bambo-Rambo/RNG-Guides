@@ -1,101 +1,189 @@
-# Gen 6 Horde Encounter RNG (Not 100% complete)
+# Horde Encounter RNG Abuse Guide
 
-### [Original Page](https://github.com/Bambo-Rambo/RNG-Guides/wiki/Horde-Encounter-RNG---Generation-6)
+There are 3 ways of triggering a horde in gen 6 games:
+* Using Sweet Scent - Guaranteed horde
+* Using Honey - Guaranteed horde
+* Moving in the grass - 5% chance for horde
 
-# What you will need:
+In this guide, we are gonna explain 2 of the 3 ways, Honey and Moving.
+While Sweet Scent works in a way simillar to Honey, 
+it suffers from unstable delays and no public tools currently support it due to different setup.
+That said, from now on, we are gonna pretend that Sweet Scent doesn't exist at all.
+
 # Tools
-* [3DS RNG Tool](https://github.com/wwwwwwzx/3DSRNGTool/releases/tag/1.0.5)
-* [Pcalc for 3DS](https://gbatemp.net/threads/pokecalcntr-for-gen-6-the-rng-tool-suite-for-the-3ds.473221/) or [CitraRNG for Citra Emulator](https://github.com/Admiral-Fish/CitraRNG/releases/tag/v3.1.0)
-* [Tiny Finder](https://github.com/Bambo-Rambo/TinyFinder) (Optional)
 
-# In game
+* [3DS RNG Tool](https://ci.appveyor.com/project/Bambo-Rambo/3dsrngtool/build/artifacts) (My fork)
+* [Tiny Finder](https://ci.appveyor.com/project/Bambo-Rambo/tinyfinder/build/artifacts)
+* [Pcalc](https://gbatemp.net/threads/pokecalcntr-for-gen-6-the-rng-tool-suite-for-the-3ds.473221/) for 3ds or [CitraRNG](https://github.com/Admiral-Fish/CitraRNG/releases) for Citra Emulator
 
-* Honey to trigger the horde. Sweet scent works as well but its setup is not supported in the existing tools
+# Introduction
 
-* Shiny Charm (Highly recommended if going for shinies)
+Like most gen 6 rng types, a complete horde encounter rng requires manipulation of both the MT and TinyMT states.
+MT (Mersenne Twister / the initial seed), is used to generate the PID (shininess), the IVs (stats), gender (if exists), 
+ability (if not HA) and the nature (unless force synced).
 
-* A Pokemon with the Synchronize ability in the first slot if you want a specific nature
+TinyMT (Tiny Mersenne Twister), is used to decide the encounter slot (species), the synchronize success, 
+the chance of getting the HA and if doing the Moving method, the successful horde trigger.
 
-* Maximizing the memories of all Pokemon in your party is recommended
+For the MT part, we are gonna be using 3DS RNG Tool while for the TinyMT part, Tiny Finder, both getting info from Pcalc.
 
-* Some experience with RNG manipulation in generation 6
+**To avoid any confusion between the 2 algorithms, I am gonna be using the term "frame" for a MT state and "index" for a TinyMT state.**
 
-* This guide supposes that you already have understood what TinyMT is and why does it matter
+As for the frames, we notice that 3DS RNG Tool shows the PID and the stats of all 5 Pokemon in the horde for each frame.
+The first five rows represent the resulting horde for frame 0, the next five ones for frame 1 etc.
 
-# Getting Started
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Horde/Horde0.png)
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Horde/Horde1.png)
 
-Select the "Horde" Category in the tool and use the reseed method until you find a frame that satisfies you. Search for something that has the desired IVs and shininess only. The rest (sync, slot, HA etc) will be manipulated later. If you are planning on syncing the nature, check the "Assume Synced" box to get an idea of how the target Pokemon will be.
+If you have the shiny charm, you will be getting 15 identical shiny frames with the same traits.
+This happens because the charm affects each Pokemon seperately.
+Like Normal wild shows 3 identical shiny frames, here we have 15.
+We will see later which of these to aim for.
+Just keep in mind that each of these shiny frames is a different horde.
 
-![](https://i.imgur.com/J1QWdKw.png)
+### Honey method - Prons and cons
 
-I will be aiming for a Jolly shiny Starly at Route 11. I also want it to have its hidden ability so the gender may be the opposite but we will check it later. We also need to check which of these 15 frames to aim for which is something we will do later as well.
+* (+) Quite easy to find and hit your target index (getting the correct slot, sync etc)
+* (+) No chance of failing the horde encounter
+* (-) Unstable delays can result in getting the correct species but wrong stats, PID etc
 
+### Moving method - Prons and cons
 
-# Setting up the tool - Calibrating the delay
+* (+) Stable delay (+6)
+* (-) In ORAS, only possible at long grass
+* (-) Will miss the encounter completely if not done right
+* (-) The desired index might be very far away, may not have time to combine with a nice frame
 
-First, we need to make a "test" attempt to find our delay.
+There is no way to tell which method is actually "better".
+Depending on the case/place, one may be more effective that the other.
+I am gonna explain both and you can choose whichever works better for you.
 
-Μake sure that you have the correct version selected (XY or ORAS) in the main window of the tool otherwise you are going to get wrong results. Then open the Tiny Timeline Tool and put the exact number of Pokemon in your party. If you are doing this in caves, check the "Cave" box.
+For either of the two methods, I recommend using the NTR helper to connect your console to the 2 programms.
 
-![](https://i.imgur.com/MERXKVz.png)
+Connecting to 3DS RNG Tool will allow you to search for nice spreads faster, 
+while Tiny Finder will read your TinyMT state immediately without having to type it manually every time.
 
-The nice thing about Horde RNG, is that we can first set up the TinyMT to guarantee the slot, sync and HA, and then wait inside the bag until we reach our target frame then use the Honey. Let's see how:
+# Honey Method
 
-In game, press the X button to open the menu and calibrate the TinyMT. If you are using the [NTR helper](https://github.com/wwwwwwzx/3DSRNGTool/wiki/NTR-Helper-Usage), press "Calibrate" and it will do it for you. 
+There is nothing really difficult here. 
+After calibrating the delay for the main (MT) rng once, 
+we are gonna prepare the TinyMT part to guarantee the correct species, nature sync and ability, 
+then wait inside the bag with the Honey highlighted until we reach our target frame.
 
-Scroll down a bit (or use Tiny Finder to filter the results to your preference) until you find the desired index. I will be using a Starly horde to calibrate the delay so I am looking for a slot 3 (Starly) index. You can use any index for testing though.
+Make sure that you have already saved the game in the desired route/location beforehand.
 
-![](https://i.imgur.com/yC4cBDN.png)
+### Searching for the desired frame
 
-So index 10 is the one I need to use honey at, in order to get a Starly. As we can understand, for that index, the nature will sync and neither of the 5 Starlys will have their hidden ability (doesn't matter since I will only calibrate the delay this time).
+In 3DS RNG Tool, pick your location and the desired species.
 
-In order to land at index 10, what I am going to do is enter the bag at index 8. Remember that entering the bag, causes one advancement and then freezes the TinyMT until you manually advance it again.
+Use the [reseed](https://github.com/wwwwwwzx/3DSRNGTool/wiki/NTR-Helper-Usage#note) method until you find a (shiny) spread that satisfies you.
 
-![](https://i.imgur.com/nV48Fmi.png)
+If you care about the gender of the Pokemon, keep in mind that it may be the opposite of the one you see in the tool, 
+if you plan on syncing the nature and/or manipulating for the HA.
+In that case, check the "Assume Synced" box in the tool, select a random nature from the list and set the value of the "HA" box to anything between 1-5.
+The frame(s) with the Hidden Ability will show the correct gender.
+Don't set them as target frames yet, I will get back to this later.
 
-At index 9, I only need one more advancement. A relible way to do this, is checking the summary of one of your Pokemon once. Select one from your party with 4 moves and attempt to teach it a new move. When prompted to replace an old one, reject it (replacing it will advance the TinyMT by more than 1 so don't do it). Also don't stay in the summary screen for too long because it will keeping advancing constantly.
+### Getting Started - Calculating the Honey delay
 
-Other ways of advancing the TinyMT state inside the bag include:
+Load the game and enter the bag. 
+The first try will be random in order to find the delay for our current locaton.
 
-* Turning on/off the Exp Share advances by 3 for every Pokemon in your party
-* Giving one of your Pokemon a held item, advances by 3 (sometimes by 4).
+Inside the bag, highight the Honey and press 'A' once so you will be ready to use it.
 
-![](https://i.imgur.com/t2Z769i.png)
+In the "Generator" tab of **Tiny Finder**, select the "Horde" method, 
+choose your location or check the "Cave" box if needed and carefully put the exact number of Pokemon in your party.
 
-We are now at index 10 ready to get our Starly horde. **Right click on it and set it as current status**. Then go to the main window and click search. The following text will appear and confirm the characteristics of your current index. If it shows different results from the ones you are expecting, double check everything and fix the error. This is important because the tool needs to know the species and ability (HA or not) that you will be getting in order to show the correct results.
+**Don't mess with the "Preferences" section yet, or if you did, check the "Ignore Filters" box.**
 
-![](https://i.imgur.com/zQJ9W6i.png)
+Click "Update" and the tool will read and show the results for your current TinyMT state.
 
-### As for the delay part, I am gonna activate the honey at frame 536760 so let's see what we get:
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Horde/Horde2.png)
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Horde/Horde3.png)
 
-![](https://i.imgur.com/Wsv8e06.png)
+If I use honey now, I am gonna hit index 0 in the first row.
+In this case, synchronize will not work and the species will be five Zubats (slot 1 in Meteor Falls) none of which will have their hidden ability.
 
-Nice! I got what I was expecting. The first (the far right one) Starly's stats, match the tool's results for that frame so I am not changing the delay. This is not always the case though so you need to calibrate regardless. Also Pcalc for XY, will only show the stats of the first Pokemon in the horde so keep that in mind when searching for the IVs in the tool to find what you got. (Check the first of the 5 rows for a given frame).
+You can find the encounter slots for gen 6 encounters including hordes [here](https://sites.google.com/site/pokemonslots/gen-vi).
 
-# Finalizing the setup - Hitting the target frame
+This step is necessary because, for 3DS RNG Tool to calculate the results (PID, stats etc) accurately, it needs to know the above info (HA, sync).
 
-We saw earlier in the main window that I got 15 identical frames that had the desired IVs and shininess. But which of these should I aim for?
+So according to index 0 from Tiny Finder, I return to 3DS RNG Tool, choose "Zubat" in "Meteor Falls (2)" location, 
+leave the "Assume Synced" box unchecked and don't change the HA number.
 
-Well, we need to manipulate the TinyMT again to get the desired slot, sync and hidden ability and depending on that, we will know what to aim for.
+In order to find the delay, I freeze the game by pressing Start + Select at frame 50382, 
+I set it as target frame in the tool (Right Click -> "Set as Target Frame") then hold 'A' to unfreeze and use the Honey.
 
-If you don't care about HA, you can aim for any of these but in my case, I want it so I am looking for the appropriate index.
+(I recommend having all 3 Pcalc menus open in order to have more stable delays.)
 
-I found it and set is as current status again. The tool can finally track down the target frame (559094/559095/559096).
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Horde/Horde4.png)
 
-Tip: If you want to increase your chances of hitting the correct delay, open all 3 Pcalc Menus (Frame info, Pokemon info and Control mapping at the lower screen.
-Works fine for ORAS, kinda unstable for XY but still helpful for me.
+By pressing Start + Left, we can see the wild Pokemon's stats (to shift between different Pokemon in the horde tap Select + Right).
 
-By the way the gender doesn't change due to HA but this isn't always the case.
+As expected, the TinyMT part is correct. 5 Zubats, random natures even though I am leading with synchronize and no HA either.
 
-Using the method described above, I can finally land at index 61 and wait until I reach my target frame. Here we go.
+Spread is: 30/18/1/29/1/9 so I am gonna put it in 3DS RNG Tool and press "Calculate" to find how off I was.
 
-![](https://i.imgur.com/XAVVS0V.png)
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Horde/Horde5.png)
 
-![](https://i.imgur.com/TdpHR8L.png)
+Notice how the tool shows 5 simillar frames with the same spread. 
 
-As said before, Pcalc shows the info of the first Pokemon only but since I got the shiny, I can confrim it was a success. I also check the Pokemon's info in my party when I catch it.
+I can easily tell I landed on the 5th though (50374) since Pcalc showed that this spread belongs to the 1st Zubat (Horde Pokemon 1) so I am looking for the slot 1 frame.
 
+(Keep in mind that the term "slot" here, implies the position of the Pokemon in the horde. No relation to the encounter slots at all.)
 
-# ✨[Bonus](https://www.youtube.com/watch?v=Fp7ajerqOeg)✨
+To calculate the delay, just take the number from the "Shift/F" column and add it to the current delay.
 
+174 + (-8) = 174 - 8 = **166**
 
+### Finding the right index, hitting our target
+
+Run away from the battle, and enter the bag again.
+
+In Tiny Finder, choose the encounter slot you want to hit, select "Any slot" for HA if you want your target to have its Hidden ability, 
+check the "Sync" box if you want to sync the nature and if playing ORAS, ignore the flute boxes unless you care about the exact level of the Pokemon.
+
+Press "Update" and these are the indexes that meet your requirements.
+You may target any of them (probably the earliest one).
+
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Horde/Horde6.png)
+
+The earliest index with slot 3, HA and nature sync requires 49 advancements.
+
+Here are some ways to advance inside the bag:
+
+* Attempting to teach one of your Pokemon a new move and reject it, advances by 1 index (In fact what advances here, is checking the summary screen of the Pokemon). Don't actually teach the move, otherwise unwanted advances will occur. Don't stay in the move selection screen for too long, otherwise unwanted advances will occur.
+* Giving your Pokemon a held item, usually advances by 3 indexes (rarely by 4).
+* Turning on/off the EXP Share advances by 3 * number of Party. This means that if you have 4 Pokemon in your party, using the Exp Share, will advance 3 * 4 = 12 indexes.
+
+I have 5 Pokemon in my party so there will be 5 * 3 = **15** advances per Exp share usage.
+
+Since I need 49, I can use the Exp Share 3 times (15 * 3 = +45), give one of my Pokemon a held item (+3) 
+and finally attempt to teach it a new move (+1).
+The total is (45 + 3 + 1) = 49 and that's pretty much it.
+
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Horde/Horde7.png)
+
+There we go!
+
+My current TinyMT state matches the one of my target index.
+
+It is now guaranteed that using Honey here, will generate a horde of 5 Jolly (my leader's nature) Bagons where the 2nd one will have its Hidden ability (Sheer Force).
+
+Time to track down our exact target frame(s) so we know exactly when to use the honey, one more "tricky" step and we succeed.
+
+In 3DS RNG Tool, choose "Bagon" in "Slots", change the HA number to 2 and adjust the Nature settings.
+
+In the following image, frames 279306-279308 are the ones I should go for since they have the HA in slot 2, 
+so I just need to wait until I get there, with the Honey ready for use and all 3 Pcalc menus open.
+
+Notice how the gender for all those shiny frames changes from female to male after the "Assume Synced" box was checked. HA didn't affect this time.
+
+I am expecting the shiny with the HA in the second spot (from right to left) of the horde.
+Let's go!
+
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Horde/Horde8.png)
+
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Horde/Horde9.png)
+
+# Moving Method (Pending)
