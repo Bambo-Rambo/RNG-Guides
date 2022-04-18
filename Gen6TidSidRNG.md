@@ -4,7 +4,7 @@
 
 * [3DS RNG Tool](https://github.com/wwwwwwzx/3DSRNGTool/releases/tag/1.0.5)
 * [CitraRNG](https://github.com/Admiral-Fish/CitraRNG/releases/tag/v3.1.0)
-* [Tiny Finder](https://github.com/Bambo-Rambo/TinyFinder)
+* [Tiny Finder](https://ci.appveyor.com/project/Bambo-Rambo/tinyfinder/build/artifacts)
 
 
 ### Getting Started
@@ -33,9 +33,7 @@ In Tiny Finder, use the "**Date Searcher**" Tab and fill in the boxes with the a
 
 In the "Calibration" box, copy-paste the 4 numbers.
 
-Select the game version, the month to search results in, the max number of advances you are willing to waste, the desired TID and SID (max 65535 for both) and the maximum number of results you want the tool to find. 
-
-For ID RNG, it's suggested to be 1-2 max, because the list won't be updated until all results have been found.
+Select the game version, the month to search results in, the max number of advances you are willing to waste and of course the desired TID and SID (max 65535 for both).
 
 ### **Important**
 
@@ -45,11 +43,9 @@ Be very careful. Double check the year and the TinyMT state. Putting any of thes
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/ID/ID3.png)
 
-Press "Search" or "Calibrate and search" (if the tools hasn't calibrated already) and let it do the research for you - it will freeze while searching, don't worry. 
+Press "Search" or "Calibrate and search" (if the tools hasn't calibrated already) and let it do the research for you. 
 
-It shouldn't take long (considering everything was done right so far). 
-
-When you get a result that satisfies you, copy paste the date from the cell directly to Citra RTC (the date format is identical for that purpose) 
+When you get a result, copy paste the date from the cell directly to Citra RTC (the date format is identical for that purpose) 
 and if everything was done right, you will get the same TinyMT state in CitraRNG:
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/ID/ID4.png)
