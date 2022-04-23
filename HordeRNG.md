@@ -2,8 +2,8 @@
 
 There are 3 ways of triggering a horde in gen 6 games:
 * Using Sweet Scent - Guaranteed horde
-* Using Honey - Guaranteed horde
-* Moving in the grass - 5% chance for horde
+* [Using Honey - Guaranteed horde](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/HordeRNG.md#honey-method)
+* [Moving in the grass - 5% chance for horde](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/HordeRNG.md#moving-method)
 
 In this guide, we are gonna explain 2 of the 3 ways, Honey and Moving.
 While Sweet Scent works in a way simillar to Honey, 
@@ -118,19 +118,20 @@ I set it as target frame in the tool (Right Click -> "Set as Target Frame") then
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Horde/Horde4.png)
 
-By pressing Start + Left, we can see the wild Pokemon's stats (to shift between different Pokemon in the horde tap Select + Right).
+By pressing Start + Left, we can see the wild Pokemon's stats (to shift between the stats of the rest of the Pokemon in the horde tap Select + Right after pressing Start + Left). 
 
-As expected, the TinyMT part is correct. 5 Zubats, random natures even though I am leading with synchronize and no HA either.
+As expected, the TinyMT part is correct. 
+5 Zubats, random natures even though I am leading with synchronize and no HA either. 
 
-Spread is: 30/18/1/29/1/9 so I am gonna put it in 3DS RNG Tool and press "Calculate" to find how off I was.
+The spread of **"Enemy Pokemon 1"**: 30/18/1/29/1/9 so I am gonna put it in 3DS RNG Tool and press "Calculate" to find how off I was.
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Horde/Horde5.png)
 
-Notice how the tool shows 5 simillar frames with the same spread. 
+Notice that the tool shows 5 simillar frames with the same spread. 
 
-I can easily tell I landed on the 5th though (50374) since Pcalc showed that this spread belongs to the 1st Zubat (Horde Pokemon 1) so I am looking for the slot 1 frame.
+But since I put the spread of the 1st Pokemon, I know that the frame I hit, was 50374 (slot 1).
 
-(Keep in mind that the term "slot" here, implies the position of the Pokemon in the horde. No relation to the encounter slots at all.)
+(Keep in mind that the term "slot" here, implies the position of the Pokemon in the horde. No relation to the encounter slot table at all.)
 
 To calculate the delay, just take the number from the "Shift/F" column and add it to the current delay.
 
@@ -186,4 +187,118 @@ Let's go!
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Horde/Horde9.png)
 
-# Moving Method (Pending)
+# Moving Method
+
+* **This is similar to the Normal Wild method you can find in [this guide](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/NormalWild-FS-RNG.md) 
+which I highly recommend reading first. If you already did, you may proceed.**
+
+* **Having the shiny charm is also recommended**
+
+Until now, we didn't have to worry about triggering a horde encounter since Honey did the job for us.
+
+Now things are going to be tougher since we have to move (step/turn) the player character at the right time and trigger the horde this way instead.
+
+To get an idea, let's take a look at the numbers:
+* Using Honey: **100%** chance of triggering a horde no matter what
+* Taking a step/turn: 13% (or 7% for caves) chance of triggering **any** wild encounter + 5% chance of this encounter being horde 
+=> **0,65%** chance in the grass and **0,35%** in caves.
+
+Good news is that we don't need to calibrate the delay, value is always +6.
+In fact, when you get used to this method, it's gonna be the recommended one, 
+since the Honey method is problematic on the delay part and may screw you up even if you do everything right.
+
+**Remember that if playing ORAS, this is only possible in [Long Grass](https://bulbapedia.bulbagarden.net/wiki/Tall_grass#Long_grass).**
+
+### Finding the target frame
+
+This step is going to be more complicated than usual.
+
+In Tiny Finder, check the "Trigger by turn" box and fill in the rest of the fields accordingly.
+If you are leading with Illuminate instead of Synchronize, double the ratio value for the current location (14 for caves and 26 everywhere else).
+
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Horde/Horde10.png)
+
+As said, the chance of triggering a wild horde each time we take a step, is significantly lower than using honey, 
+which practically means that the possible target indexes will be way more limited.
+
+In the above image for example, we can see that there is only one index between 0-50000 that covers my expectations.
+And I obviously need to reach it before reaching my target main frame.
+This means that the target index affects the minimum frame number I can aim for 
+because I don't want to find and reach a nice frame before I have set up the TinyMT part.
+
+* In XY, the fastest way to advance the TinyMT state, is during a wild battle at Route 17 (~1 index per frame). 
+* In ORAS, fly to the south part of Route 121 where it's raining (~3 indexes per frame).
+
+Use these 2 ways to advance, and when you are getting close (around 1000 indexes before), return to your target location.
+
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Horde/Horde11.png)
+
+### Setting up 3DS RNG Tool
+
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Horde/Horde12.png)
+
+Tiny Finder found 2 indexes that I can aim for (1120 and 3020) so now I can calculate the minimum frame number.
+
+Since I am playing XY, the least number of frames I need to spend before reaching index 1120, is ~1120 frames (~1 index per frame during Route 17 encounters). 
+
+(I am gonna search results after frame 10000 to be safe).
+
+I also need to put the info from Tiny Finder in 3DS RNG Tool (nature syncs, slot = 3 and HA = 2) in order to get the correct results.
+
+My location will be Frost Cavern and slot 3 is Smoochum (which belongs to the undiscovered egg group by the way, so it will have 3 guaranteed perfect IVs).
+
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Horde/Horde13.png)
+
+TinyMT Index 1120 is close and I don't need to spend time in a wild encounter at Route 17 for fast advances, so I am going to Frost Cavern immediately.
+(This time I got lucky, but generally speaking, we need to do. 
+Also remember to return at your location around ~1000 indexes before your target to be safe, not later).
+
+### Preperation
+
+If you already read the [Normal Wild guide](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/NormalWild-FS-RNG.md) I recommended eariler, 
+you already know that we need to take a few steps before being able to trigger any wild encounter when moving. 
+(Wasting a whole repel - 100 steps - to avoid unwanted encounters before, is recommended especially inside caves). 
+
+When the repel effect ends, enter the bag and click "Update" in Tiny Finder.
+
+### Important: In the Honey method, we advanced until reach our target index, waited until reach our target frame and then used the honey. Now we need to advance until we are x indexes before our target index, wait until reach ~100-120 frames before our target frame and then exit the bag, rotate the character and succeed.
+
+We do this because there are some TinyMT advances (the number x in this case) when exiting bag that need to be accounted for.
+And this process takes about 100-120 frames.
+
+The value of x is:
+* **15** if playing ORAS
+* **27** if playing XY
+* **3** inside caves for either game version (My case here)
+
+You can see some XY exceptions [here](https://imgur.com/a/pGk0bhM) and some ORAS ones [here](https://imgur.com/a/B3URhjo). 
+These albums also show the recommended spots you need to stand on when doing the RNG.
+
+Once again, here are some ways to advance inside the bag:
+
+* Attempting to teach one of your Pokemon a new move and reject it, advances by 1 index (In fact what advances here, is checking the summary screen of the Pokemon). Don't actually teach the move, otherwise unwanted advances will occur. Don't stay in the move selection screen for too long, otherwise unwanted advances will occur.
+* Giving your Pokemon a held item, usually advances by 3 indexes (rarely by 4).
+* Turning on/off the EXP Share advances by 3 * number of Party. This means that if you have 6 Pokemon in your party for example, using the Exp Share, will advance 3 * 6 = 18 indexes.
+
+My current TinyMT inside the bag, is 225 indexes before my target and since this number must become 3, 
+I need to advance 225 - 3 = **222 times**.
+
+My party number is 6 which means that every time I use the Exp share, I am gonna force (3 * 6) = 18 advances 
+so I will use it 12 times (12 * 18 = 216) and I am gonna give 2 of my Pokemon a held item (2 * 3 = 6).
+
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Horde/Horde14.png)
+
+**The TinyMT part is done so now I just need to wait until reach ~120 frames before my target then I will press 'B' to exit the bag.**
+
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Horde/Horde15.png)
+
+In the 'X' menu now, advance until you are **10** frames before your target.
+
+Hold the 'X' button and tap select 8 times to slowly close the menu while advancing frames.
+
+At this point, you should be at your target index and -2 from the target frame (the game is still frozen).
+
+Hold one of the D pad arrows in a direction different than the one your character is looking, and press 'A' to unpause and rotate.
+
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Horde/Horde16.gif)
+
