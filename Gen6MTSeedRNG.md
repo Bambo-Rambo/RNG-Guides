@@ -1,1 +1,1 @@
-# Gen 6 Main (MT) Seed RNG
+# Gen 6 Main (MT) Seed RNG (Pending)
