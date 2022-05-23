@@ -101,5 +101,65 @@ If everything done right will hit your target seed inside the target date (May 2
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/MT%20Seed/Seed6.png)
 
 
+# Seed RNG - Specific Date + Time
 
-# Seed RNG - Specific Date + Time (pending)
+**Before proceeding, please make sure that you have understood the above method first.**
+
+The only reason to combine a specific MT seed with a specific date + time, is for abusing both the MT and TinyMT seeds simultaneously.
+
+This can be useful when you want to RNG a very specific DexNav encounter with specific PID for example.
+
+You can either right click inside the target TinyMT index in the main form and have it set the MT window for you, 
+or just put the Target date and time manually.
+
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/MT%20Seed/Seed8.png)
+
+Set the Citra RTC to the target Date + Time (in the previous method we set the time to 00:00:00) and for once again,
+load the game and skip the final cutscene in a frame of your choice, 
+copy and put the initial seed and current Save Parameter from CitraRNG to Tiny Finder and click "Search".
+It will take a few seconds/minutes to find a result, don't worry.
+
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/MT%20Seed/Seed9.png)
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/MT%20Seed/Seed10.png)
+
+Now things are getting a bit tricky.
+
+Close the game and in Citra menu, set the RTC to the new Date shown in the tool (**2022-06-06T00:23:59 in my case**).
+
+Load the game and skip the final cutscene at the same frame you did earlier.
+
+If everything is done right, your actual (temporary) Initial Seed will be the one shown in the tool (**44F06FFF in my case**).
+
+Load the save file and like we did in the previous method, 
+you 're gonna have to save the game at the frame shown in order to obtain the New Save Parameter.
+
+(In my case, I need to save at frame **7189** and the Save Parameter will change from **79913DDC** to **82AE86D2**)
+
+In the previous method, we also explained how to deal with the odd/even frame issue so make sure you have understood that part first.
+
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/MT%20Seed/Seed11.png)
+
+Success!
+
+My new Save Parameter value is the correct one and now all I need to do, 
+is change the Citra RTC to the desired Date + Time again and skip the final cutscene at the same frame I did earlier.
+
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/MT%20Seed/Seed12.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
