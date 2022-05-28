@@ -14,7 +14,7 @@ For this guide I am going to explain the method for Citra emulator only.
 
 **If you don't care about the exact date of your Pokemon, you can either try the 
 [original method](https://pokerng.forumcommunity.net/?t=61239900#entry441604733) instead, written by Real.96, 
-or follow the first method of the guide with some changes.**
+or follow the first method of this guide with some minor changes I am gonna explain.**
 
 ### Tools
 * [Tiny Finder](https://github.com/Bambo-Rambo/TinyFinder/releases)
@@ -39,7 +39,8 @@ My target date is May 23 2022 so it should look like this:
 
 If you are doing the method for any date, this will be the minimum date that the tool will start searching from so you can put whatever you want.
 
-Load the game, open CitraRNG and connect with Citra then skip the final cutscene at a frame of your choice **and write it down somewhere**.
+Load the game, open CitraRNG and connect with Citra then skip the final cutscene at a frame of your choice **and write it down somewhere**, 
+you are gonna reuse it later.
 
 The final cutscene screens for XY (left) and ORAS (right) can be seen in the following images (ORAS requires to skip 2 cutscenes, of which only the second matters):
 
@@ -56,7 +57,7 @@ My target seed is FFFFFFFF, target date is 2022-05-23 and the other 2 values (Fr
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/MT%20Seed/Seed2.png)
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/MT%20Seed/Seed3.png)
 
-Even if you don't target a specific date, you still need to put the date you used in Citra earlier, just keep the "Terget Date" box unchecked.
+Even if you don't target a specific date, you still need to put the date you used in Citra earlier, just keep the "Target Date" box unchecked.
 The tool will find many more results to choose in later dates as well which makes the process faster if you are not picky about the date itself.
 
 The results in Tiny Finder show that after pressing 'A' to load the save file, 
