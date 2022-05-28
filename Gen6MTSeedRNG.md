@@ -8,12 +8,13 @@ This is useful when the user wants the Pokemon's summary screen date to match th
 
 It is also possible to force a specific seed in a specific date + time which is useful for simultaneous manipulation of both the MT and TinyMT seeds.
 
-Keep in mind that, while possible on real 3ds, gen 6 MT seed RNG, is tedious and may not worth your time.
+Keep in mind that, while possible on real 3ds, gen 6 MT seed RNG, is tedious and may not worth the time.
 
 For this guide I am going to explain the method for Citra emulator only.
 
-**If you don't care about the exact date of your Pokemon, you can read the 
-[original method](https://pokerng.forumcommunity.net/?t=61239900#entry441604733) instead, written by Real.96.**
+**If you don't care about the exact date of your Pokemon, you can either try the 
+[original method](https://pokerng.forumcommunity.net/?t=61239900#entry441604733) instead, written by Real.96, 
+or follow the first method of the guide with some changes.**
 
 ### Tools
 * [Tiny Finder](https://github.com/Bambo-Rambo/TinyFinder/releases)
@@ -24,7 +25,7 @@ For this guide I am going to explain the method for Citra emulator only.
 * [Gen6SeedTimeFinder](https://github.com/DevonStudios/Gen6SeedTimeFinder/releases) (for the above method)
 * [3DS Time Finder](https://github.com/Admiral-Fish/3DSTimeFinder) (for seed searching. Tiny Finder can be used as well)
 
-# Seed RNG - Specific Date only
+# Seed RNG - Specific Date / Any Date
 
 Use Tiny Finder or 3DS Time Finder to search for a seed of your choice.
 
@@ -35,6 +36,8 @@ Then set the date in the "Startup time" option to the actual date you want **and
 My target date is May 23 2022 so it should look like this:
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/MT%20Seed/Seed1.png)
+
+If you are doing the method for any date, this will be the minimum date that the tool will start searching from so you can put whatever you want.
 
 Load the game, open CitraRNG and connect with Citra then skip the final cutscene at a frame of your choice **and write it down somewhere**.
 
@@ -52,6 +55,9 @@ My target seed is FFFFFFFF, target date is 2022-05-23 and the other 2 values (Fr
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/MT%20Seed/Seed2.png)
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/MT%20Seed/Seed3.png)
+
+Even if you don't target a specific date, you still need to put the date you used in Citra earlier, just keep the "Terget Date" box unchecked.
+The tool will find many more results to choose in later dates as well which makes the process faster if you are not picky about the date itself.
 
 The results in Tiny Finder show that after pressing 'A' to load the save file, 
 if I save the game at frame **12476**, my new Save Parameter will change to **79913DDC**.
