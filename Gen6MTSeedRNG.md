@@ -81,7 +81,7 @@ Pay attention to the red box that highlights the option and check when it moves 
 
 I notice that the animation happens in odd frames so I need to change my type before actually saving.
 
-![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/MT%20Seed/Seed4.png)
+![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/MT%20Seed/Seed4.gif)
 
 ### Switching between the 2 frame types
 
