@@ -8,6 +8,10 @@
 * [Horde RNG](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/HordeRNG.md)
 * [DexNav RNG](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/DexNavRNG.md)
 
+### Generation 7
+
+* [SOS RNG](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/SOSRNG.md)
+
 ### Other
 
 * [Normal Wild RNG](https://github.com/Bambo-Rambo/RNG-Guides/wiki/Normal-Wild-RNG--Generation-6) (outdated - for reference)
