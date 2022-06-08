@@ -90,7 +90,7 @@ While leading with Trevenant, use Trick to pass the Leppa Berry to the enemy and
 You have now advanced the SOS state a bit (most likely by 2 indexes unless the enemy has called for help already).
 
 Press *Update* again and if the values of *Current Seed* and *Index* are updated normally, 
-skip to the next [step](https://github.com/Bambo-Rambo/RNG-Guides/new/main#checking-the-possible-indexes).
+skip to the next [step](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/SOSRNG.md#checking-the-possible-indexes).
 
 If you get an error message **"Exiting an infinite loop. Retry the battle and start updating before taking any actions."**,
 press *Disconnect* in CitraRNG and then *Connect* again.
