@@ -1,8 +1,8 @@
 # Normal Wild - Friend Safari RNG
 
 ### Tools needed:
-* [3DS RNG Tool](https://github.com/wwwwwwzx/3DSRNGTool/releases)
-* [Tiny Finder](https://github.com/Bambo-Rambo/TinyFinder#latest-commit) (The latest commit)
+* [3DS RNG Tool](https://ci.appveyor.com/project/Bambo-Rambo/3dsrngtool/build/artifacts)
+* [Tiny Finder](https://ci.appveyor.com/project/Bambo-Rambo/tinyfinder/build/artifacts) (The latest commit)
 * [Pcalc G6](https://gbatemp.net/threads/pokecalcntr-for-gen-6-the-rng-tool-suite-for-the-3ds.473221/) (Retail) or [CitraRNG](https://github.com/Admiral-Fish/CitraRNG/releases) (Emulator)
 
 ### Recommended in game
@@ -16,20 +16,21 @@
 
 In generation 6, when using honey or sweet scent in most areas, hordes are generated instead of single wild Pokemon.
 
-This means that for abusing single Pokemon in the wild, we have to trigger the desired encounter by moving in the grass.
+This means that in order to abuse for single Pokemon in the wild, we have to trigger the desired encounter by moving in the grass.
 
-The gender, IVs and shininess for wild encounters in gen 6 games, are generated using the initial seed (main state / MT).
+The gender, IVs and shininess (PID) for wild encounters in gen 6 games, are generated from the initial seed (main state / MT).
 
-The slot (species), nature sync and most important, the successful (or not) encounter trigger, are generated using a second state consisting of 4 hex numbers (TinyMT).
+The slot (species), nature sync and most important, the successful (or not) trigger of the encounter, are generated using a second state consisting of 4 hex numbers (TinyMT).
 
-The 2 states need to be manipulated together in order to get the desired Pokemon (when reaching the target frame, your current index should generate the desired results).
+The 2 states need to be manipulated together in order to get the desired Pokemon (when reaching the target frame, your current index should generate the desired encounter).
 
 The main state (MT) advances by 2 per frame or 60 per second, while TinyMT is more complicated and is affected by multiple factors 
 (NPC movements, character blinking etc).
 
-Until recently, a special timeline was required to combine those 2 and match the main state with TinyMT state.
+In the past, a special timeline was required to combine the 2 states and manipulate the final result.
 
-But with this new method, all we gotta do, is deal with TinyMT alone first, and then wait until we reach our target main frame to get the correct stats and shiny.
+But with this new method, all we gotta do, is deal with TinyMT alone first, 
+and then wait and let the game run until we reach our target main frame to get the correct stats and shiny.
 
 ### Logic
 
@@ -40,8 +41,11 @@ If you have RNG abused for eggs **without** using Masuda method and/or Shiny Cha
 we keep rejecting/accepting eggs in order to reach the target egg frame first (which generates the desired stats, nature, gender and ability) and then, 
 just before accepting the final egg, we wait until reach our shiny frame.
 
-Similarly to this, for gen 6 wild RNG, we are going to do some specific actions in order to reach the appropriate TinyMT index first, which guarantees a successful encounter, 
-the desired species and nature sync (optional), then we are gonna wait until we reach our target main frame, for IVs and shininess, and finally trigger the encounter.
+Gen 5 wild encounters is another example.
+First we advance the IV frame by taking steps, and then use chatot pitches to advance the PID frame.
+
+Similarly to these, for gen 6 wild RNG, we are going to do some specific actions in order to reach the appropriate TinyMT index first, which guarantees a successful encounter, 
+the desired species and nature sync (optional), then we are gonna wait until reach our target main frame, for IVs and shininess, and finally trigger the encounter.
 
 ### Getting Started
 
@@ -66,17 +70,15 @@ For consistency purposes, I always waste a whole repel.
 If you accidentaly trigger a random encounter after the repel effects ends, use another one and repeat. 
 When ready, freeze the game by pressing Start + Select.
 
-In Tiny Finder, select the location (very important for accurate results) or check the corresponding button (Cave / Long grass) if needed.
+In Tiny Finder, select the location (very important for accurate results) and you will notice that the min index value will be set to 
+something between 3/15/27.
+I will explain later why.
 
-In the 2 albums above, there is also a number for every location (+3 /+15 /+27).
-Set the "Min Index" value according to them, I will explain later why.
-My location is Pokemon Village so I set to 27.
+I will do the RNG in Pokemon Village's yellow flowers so min index was set to 27 automatically.
 
-Finally, fill in the filters of the 3rd box in Tiny Finder to search for your target and press "Update".
+Finally, my target Pokemon is Zoroark so I select it in the filters along with the rest of my preferences (only sync in this case).
 
-* [Gen 6 wild encounter slots](https://sites.google.com/site/pokemonslots/gen-vi)
-
-All the following indexes generate successful (yellow marked) encounters with slots 10-12 which are Zoroarks in Pokemon Village.
+After pressing "Update" the tool will show all (yellow marked) indexes that trigger wild Zoroark encounters (slots 10, 11, 12).
 
 Since index 46 is very close, I am gonna aim for that.
 
@@ -84,20 +86,25 @@ Since index 46 is very close, I am gonna aim for that.
 
 Enter the bag and press "Update" again.
 
-27, which is the number I used for Min Index, is actually the number of TinyMT advances I will get, if I press 'B' to exit from the bag to the menu.
+27 is the number of TinyMT advances I will get, when I press 'B' to exit from the bag to the menu.
 
-This number varies depending on the location, but is always the same for a given spot.
+This means that if I enter the bag in Pokemon Village, I cannot hit anything less that index 27.
 
-And since it is predictable, we are going to abuse it, in order to land on our target index directly from the bag.
+And the reason why we enter the bag in the first place, is because player blinks no longer happen 
+and the TinyMT state freezes, so we have better control of it.
+
+We are going to abuse this mechanic, in order to land on our target index directly from the bag.
 
 ### RNG
 
-The TinyMT state freezes inside the bag and doesn't advance until we manually do it ourselves, so we have full control now.
+Now we know that the TinyMT state freezes inside the bag and doesn't advance until we manually do it ourselves.
 
-Here are some ways to advance inside the bag:
+The purpose is to advance until we are 27 indexes **before** our target index.
+
+And here are some ways to do this inside the bag:
 
 * Attempting to teach one of your Pokemon a new move and reject it, advances by 1 index (In fact what advances here, is checking the summary screen of the Pokemon). 
-Teaching the move will advance more so you need to avoid it (If you stay in the summary screen for too long doing nothing, it will advance by 1 again).
+Teaching the move will advance more so you need to avoid it (If you stay in the summary screen for too long doing nothing, it will advance by 1 again - Pokemon blinks).
 * Giving your Pokemon a held item, usually advances by 3 indexes (rarely by 4).
 * Turning on/off the EXP Share advances by 3 * number of Party. This means that if you have 4 Pokemon in your party, using the Exp Share, will advance 3 * 4 = 12 indexes.
 
@@ -117,17 +124,18 @@ See [here](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/NormalWild-FS-RNG
 
 Now I am 27 indexes away, which means that when I press **'B'** to exit the bag, I will land on my target index.
 
-Stay in the empty side of the bag until you get close to your target main frame.
+Stay in the empty side of the bag until you get close to your target main frame (the one you found earlier in 3DS RNG Tool).
 
 Around ~110 frames before, press Start + Select to freeze the game.
 
-Tap Start and then 'B' immediatly as fast as you can to exit to the menu.
+Tap Start to unfreeze and then 'B' immediatly as fast as you can to exit to the menu.
+(If you don't have an empty in your bag, avoid pressing Start/Select because you will be prompted by the game to sort the existing items).
 
 It would be ideal to hold 'B' and tap Start to unfreeze, but Pcalc doesn't allow simultaneous use of the two buttons.
 
-While exiting the bag, when the black screen goes away, freeze the game again and be careful not to miss your frame.
+While exiting the bag, when the black screen goes away and the overworld is loaded again, freeze the game (Start + Select) and be careful not to miss your frame.
 
-If everything done right, you landed on your target index.
+If everything done right, you landed on your target TinyMT index.
 
 Now all you need to do is reach exactly 10 frames before your target so start spamming Select presses.
 
@@ -143,9 +151,8 @@ Hold an arrow from the D pad in a direction different to the one your character 
 
 * Waste a repel to increase the chances of succeeding.
 * Stay in the recommended spot and enter the bag.
-* Inside the bag, advance until you are 'n' indexes away from your target. The value of 'n' varies depending on your location. See [here](https://imgur.com/a/pGk0bhM) for XY 
-and [here](https://imgur.com/a/B3URhjo) for ORAS.
-* When 'n' indexes and ~110 frames away from your target, press 'B' to exit the bag, and advance until you are 10 frames away.
+* Inside the bag, advance until you are 'n' indexes away from your target. The value of 'n' varies depending on your location. Tiny Finder will set it automatically.
+* When 'n' indexes and 110-120 frames **before** your target, press 'B' **(not 'X')** to exit the bag, and advance until you are 10 frames away.
 * Hold 'X' and advance 8 (or 10) times using the Select button.
 * Rotate the character and succeed.
 
@@ -164,7 +171,6 @@ Alternatively, you can exit the bag by holding 'X' and tap Start to exit in the 
 * After exiting the bag, if you also close the 'X' menu, the lower screen functions (PSS, Poke Amie etc) are reloaded and they cause 1 TinyMT advance.
 This occurs after 12 frames which would be enough to ruin everything. 
 However, by unfreezing slowly using the D Pad + Select, let's say that this process is "postponed" for a few frames. 
-This also the case for Route 9/17 even though I thought they were affected.
-Hold the D Pad arrow until the encounter starts. The delay in those places is also 20 instead of 6 so keep that in mind.
+For Kalos routes 9 and 17, hold the D Pad arrow until the encounter starts. The delay in those places is 20 instead of 6 so keep that in mind.
 * Tiny Finder supposes that all NPCs in an area are active. 
-If you fight one of them accidentaly and stops moving afterwards, leave the area and return to enable them again.
+If you fight one of them accidentaly, leave the area and return to reset their active state.
