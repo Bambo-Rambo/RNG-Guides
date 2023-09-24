@@ -49,12 +49,14 @@ the desired species and nature sync (optional), then we are gonna wait until rea
 
 ### Getting Started
 
+Make sure the PSS communications in game is disabled like in this [video](https://www.youtube.com/watch?v=wAlfu-FCch8).
+
 Boot the game with Pcalc, connect your console to 3DS RNG Tool using the NTR Helper (see [here](https://github.com/wwwwwwzx/3DSRNGTool/wiki/NTR-Helper-Usage)) 
 and keep reseeding until you find a nice spread (Press 'B' in the "Continue" screen, and then 'A' to generate a new seed).
 
 The gender of the target Pokemon may be affected if you plan on syncing the nature, so if that's the case, check the "Assume synced" button in 3DS RNG Tool to get accurate results.
 
-Connect with Tiny Finder as well (Generator -> Extra -> NTR Helper).
+Connect with Tiny Finder as well (`Generator` -> `Extra` -> `NTR Helper`).
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Wild/Wild2.png)
 
