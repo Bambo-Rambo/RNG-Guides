@@ -63,42 +63,41 @@
 
 **Second Tab (Settings)**
 
-The “Shiny Charm” Box should be obvious.
+`Shiny Charm` should be obvious.
 
 `Grass`, `Long Grass`, `Cave`, `Water` are all different types that affect the available species.
 If you know a specific Pokemon is available in a given location but you don't see in the 3rd tab, 
 it's most likely due to having selected the wrong type.
-For example a Tentacruel in Victory Road will be visible only when you select `Water` instead of `Cave`.
+For example Tentacruel in Victory Road will be visible only when you select `Water` instead of `Cave`.
 
 If using a flute (Black/White - affects the wild's Pokemon level) select it otherwise leave it as is.
 
-Ignore the “Noise” button for now.
+Ignore the `Noise` field for now.
 
-“Search Level” is the number of times you have encountered the target Pokemon (shown in the DexNav screen for each Pokemon - caps at 999). Suggested value: 999.
+`Search Level` is the number of times you have encountered the target Pokemon (shown in the DexNav screen for each Pokemon - caps at 999). Suggested value: 999.
 
-“Chain” is the current chain length (caps at 99). Suggested value: 4.
+`Chain` is the current chain length (caps at 99 then resets to 0). Suggested value: 4.
 
 **Third Tab (Preferences)**
 
-Selecte the desired species in the first combobox. 
+Select the desired species in the first combobox. 
 The corresponding slot(s) will be auto selected, 
 though you can still edit them manually (not recommended).
 
 In the third combobox, fill in the rest of the filters to your preference.
 
-“Shiny” for a guaranteed shiny patch.
+`Shiny` is searching for guaranteed shiny patches only (The main reason to do DexNav RNG in the first place).
 
-“HA” for Hidden Ability“ and “Egg move“ for an exclusive breeding move than cannot be obtained otherwise.
+`HA` for Hidden Ability and `Egg move` for an exclusive breeding move than cannot be obtained otherwise.
 
-“Level Boost” for a +10 to the Level of the resulting Pokemon (exclamation mark in the lower DexNav screen when occurs).
+`Level Boost` is for getting a +10 boost to the wild's Pokemon level (an exclamation mark will be shown in the console's lower screen when occurs).
 
-As for “Potential” and “Flute”, the former is the guaranteed perfect IVs you will get for an index (caps at 3), 
-while the latter is the Level drop/boost if the White/Black Flute is activated for that location (caps at 4). 
-Leave either to 0 if you don’t care.
+Finally, `Potential`, is the guaranteed perfect IVs you will get for that index (caps at 3). 
+Leave it to 0 if you don’t care.
 
 ### DexNav results
 
-The “Right” and “Up” columns show the coordinates of the generated patch. Negative values, mean opposite direction 
+The `Right` and `Up` columns show the coordinates of the generated patch. Negative values, mean opposite direction 
 so for example a pair of Right = -8 and Up = -3, means that you will be getting a patch 8 tiles **left** and 3 **down** from the position you will be standing at.
 If there is no grass/water tile in those coordinates, you will fail your target so be careful when choosing your spot.
 
@@ -106,10 +105,10 @@ Yellow marked rows mean that a Pokemon will spawn successfully, otherwise they w
 
 Sync, Slot, Species, Level, HA and Egg Move columns need no further explanation.
 
-Shiny is about a Forced shiny patch. 
-The row will be marked as blue only if the patch is BOTH shiny AND successful, otherwise will still remain white.
+`Shiny` when true, means forced shiny patch. 
+The row will be marked as blue only if the patch is BOTH shiny forced AND successful, otherwise will still remain white.
 
-Potential and Flute were explained above.
+`Potential` was explained above.
 
 ### Chain Building
 
