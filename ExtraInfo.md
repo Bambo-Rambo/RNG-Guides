@@ -2,6 +2,8 @@
 
 ### DexNav slots
 
+** These have been implemented in Tiny Finder already, but I still put them here just in case.
+
 | Location  | Slot 1 | Slot 2  | Slot 3 |
 | ------------- | ------------- | ------------- | ------------- |
 | Route 101  | Lillipup  | Zorua  | Sewaddle  |
@@ -61,20 +63,14 @@
 
 **Second Tab (Settings)**
 
-The “Surf” box should be checked if your target patch will be inside the water (affects the slots).
-
 The “Shiny Charm” Box should be obvious.
 
-The “Exclusives” box, must be checked **ONLY** if DexNav exclusive Pokemon have a chance to appear.
-For a given location, DexNav Pokemon may appear in the grass but not in the water. 
-In that case, the button must be checked only if you aim for a grass Pokemon.
-It’s important to understand the difference so let’s see some examples:
+`Grass`, `Long Grass`, `Cave`, `Water` are all different types that affect the available species.
+If you know a specific Pokemon is available in a given location but you don't see in the 3rd tab, 
+it's most likely due to having selected the wrong type.
+For example a Tentacruel in Victory Road will be visible only when you select `Water` instead of `Cave`.
 
-* At Route 102, your target is Gothita (DexNav exclusive – found in the grass). “Hidden Pokemon” **must** be checked.
-* At Route 102, your target is Lotad (not DexNav exclusive). “Hidden Pokemon” **must** still be checked.
-* At Route 102, your target is Marill (not DexNav exclusive - found in the water). “Hidden Pokemon” **must NOT** be checked since there are no DexNav exclusives in the water for that route.
-* At Route 108, your target is Krabby (DexNav exclusive – found in the water). “Hidden Pokemon” **must** be checked.
-* At Route 108, your target is Pelipper (not DexNav exclusive – found in the water). “Hidden Pokemon” **must** still be checked.
+If using a flute (Black/White - affects the wild's Pokemon level) select it otherwise leave it as is.
 
 Ignore the “Noise” button for now.
 
@@ -84,11 +80,9 @@ Ignore the “Noise” button for now.
 
 **Third Tab (Preferences)**
 
-In the “Type” Combobox, choose the desired Encounter Type. 
-Normal is for default Pokemon that can occur as wild encounters in the area, while DexNav is for DexNav exclusives (3 for each area - Some areas don't have excluives).
-
-Pick the desired slot(s) in the second combobox. 
-For DexNav Pokemon, the slots can be found in the beginning of the guide.
+Selecte the desired species in the first combobox. 
+The corresponding slot(s) will be auto selected, 
+though you can still edit them manually (not recommended).
 
 In the third combobox, fill in the rest of the filters to your preference.
 
@@ -99,24 +93,21 @@ In the third combobox, fill in the rest of the filters to your preference.
 “Level Boost” for a +10 to the Level of the resulting Pokemon (exclamation mark in the lower DexNav screen when occurs).
 
 As for “Potential” and “Flute”, the former is the guaranteed perfect IVs you will get for an index (caps at 3), 
-while the latter is about the Level drop/boost if the White/Black Flute is activated for that location (caps at 4). 
+while the latter is the Level drop/boost if the White/Black Flute is activated for that location (caps at 4). 
 Leave either to 0 if you don’t care.
 
 ### DexNav results
 
-The “Right” and “Up” columns show the coordinates of the generated patch. It should be obvious that negative values, mean opposite direction. 
-For example a pair of Right = -8 and Up = -3, means that you will be getting a patch 8 tiles **left** and 3 **down** from the position you will be standing at.
-If there is not grass/water in the generated spot, the game will try later indexes so you need to be careful when choosing a tile to stand in.
+The “Right” and “Up” columns show the coordinates of the generated patch. Negative values, mean opposite direction 
+so for example a pair of Right = -8 and Up = -3, means that you will be getting a patch 8 tiles **left** and 3 **down** from the position you will be standing at.
+If there is no grass/water tile in those coordinates, you will fail your target so be careful when choosing your spot.
 
-If success = true, the row will be marked as yellow similarly to what 3DS RNG Tool does for Normal Wild and Friend Safari RNG when an encounter is successful.
+Yellow marked rows mean that a Pokemon will spawn successfully, otherwise they will be white (Clicking `Generate` will only show successful ones).
 
-Sync, Slot, HA and Egg Move columns need no further explanation.
+Sync, Slot, Species, Level, HA and Egg Move columns need no further explanation.
 
 Shiny is about a Forced shiny patch. 
-The row will be marked as blue only if the patch is BOTH shiny AND successful, otherwise will remain white.
-
-As for the Level column, it shows the TOTAL Level Boost for a given index, depending on the situation (value can be from +0 to +30).
-We will see later in the guide how this number varies and how to mess with it.
+The row will be marked as blue only if the patch is BOTH shiny AND successful, otherwise will still remain white.
 
 Potential and Flute were explained above.
 
