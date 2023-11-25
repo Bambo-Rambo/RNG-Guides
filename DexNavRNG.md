@@ -14,9 +14,7 @@ special patches can be generated that result in guaranteed (square) shiny Pokemo
 Now imagine a forced shiny encounter with 3 perfect IVs and all the above.
 Really powerful and one of its kind, but also complicated to perform, so having some experience with TinyMT RNG is required.
 
-Please note that the exact egg move and the held item are not predicted.
-The same goes for the exact level of the Pokemon if it is not fixed.
-We can still abuse for a random egg move but we can't choose it, while the level inaccuracy does not affect the species.
+Please note that while we can abuse for an egg move at the 1st slot, we can't choose which one will be.
 
 Also the following method doesn't work for species that can be obtained by fishing, although DexNav allows it generally.
 
