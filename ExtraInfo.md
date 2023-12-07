@@ -68,7 +68,13 @@ If there is no grass/water tile in the indicative coordinates, you will fail you
 
 Yellow marked rows mean that a Pokemon will spawn successfully, otherwise they will be white (Clicking `Generate` will only show successful ones).
 
-Sync, Slot, Species, Level, HA and Egg Move columns need no further explanation at this point.
+Egg moves that can only be learned by breeding will be marked in **bold**, while grayed out moves can be learned in one (or more) of the following ways:
+* Leveling up
+* TM/HM
+* Move tutor
+* Move relearner
+
+Sync, Slot, Species, Level, HA and columns need no further explanation at this point.
 
 `Shiny` when true, means forced shiny patch. 
 The row will be marked as blue only if the patch is BOTH shiny forced AND successful, otherwise will still remain white.
