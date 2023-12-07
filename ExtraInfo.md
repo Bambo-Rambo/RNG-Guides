@@ -9,7 +9,7 @@
 * PokeRadar doesn't have exclusive Pokemon and you can't abuse for some extra nice traits like HA, Egg move, Level Boost. DexNav can get you any available Pokemon for a given location including fishing and Horde Pokemon (Search function only - not implemented in Tiny Finder).
 * PokeRadar patch RNG is more forgiving. You can activate the Radar device directly from the bag with no frame pressure. Also your patches don't always have to fit inside the grass to get what you want. DexNav is way more strict. If the patch doesn't fit, the game advances the RNG multiple times attempting to find something that fits. This increases the delay (although it happens more when using the Search method), and of course makes you fail.
 
-### Tiny Finder Controls
+### Setting up Tiny Finder
 
 **Second Tab (Settings)**
 
@@ -22,22 +22,36 @@ For example Tentacruel in Victory Road will be visible only when you select `Wat
 
 If using a flute (Black/White - affects the wild's Pokemon level) select it otherwise leave it as is.
 
-Ignore the `Calibration` field for now. 
-For caves it will be set to 2 automatically.
+Ignore the `Calibration` field for now, for caves it will be set to 2 automatically.
 
-`Search Level` is the number of times you have encountered the target Pokemon (shown in the DexNav screen for each Pokemon - caps at 999). Suggested value: 999.
+`Search Level` is the number of times you have encountered the target Pokemon (shown in the DexNav screen for each Pokemon - caps at 999). 
+I recommend using [PKHex](https://projectpokemon.org/home/files/file/1-pkhex/) to set it to 999 for every Pokemon.
 
-`Chain` is the current chain length (caps at 99 then resets to 0). Suggested value: 4.
+**Af for `Chain` (caps at 99 then resets to 0), it's important here to make a brief explanation of how the chain length affects the results:**
+
+Starting at 4, and for every +5, the chances of getting a nice index, greatly increase.
+This means that if your current chain length matches one of the following numbers: [4, 9, 14, 19, 24, 29 etc], you are more likely to find what you are looking for.
+In that case, your target Pokemon is also guaranteed to have the following:
+* Egg Move
+* A +10 Level Boost
+* At least 1 perfect IV
+
+(Chain = 49 gives even better results while 99 is the best possible value, but nobody is willing to build such a long chain)
+
+Of course shininess is affected in a positive way as well.
+
+Also starting at 0, and for every +5 added, [5, 10, 15, 20, 25 etc] the target Pokemon is guaranteed to have a +1 boost to its level. 
+This doesn't affect the standar +10 that you may get. In fact, they can be combined resulting in a possible +29 Level Boost when the chain length tops at 99).
 
 **Third Tab (Preferences)**
 
 Select the desired species in the first combobox. 
 The corresponding slot(s) will be auto selected, 
-though you can still edit them manually (not recommended).
+though you can still edit them manually (not recommended unless you are looking for more than 2 Pokemon).
 
 In the third combobox, fill in the rest of the filters to your preference.
 
-`Shiny` is searching for guaranteed shiny patches only (The main reason to do DexNav RNG in the first place).
+`Shiny` is searching for guaranteed shiny patches only (The main reason to select DexNav RNG in the first place).
 
 `HA` for Hidden Ability and `Egg move` for an exclusive breeding move than cannot be obtained otherwise.
 
@@ -49,8 +63,8 @@ Leave it to 0 if you don’t care.
 ### DexNav results
 
 The `Right` and `Up` columns show the coordinates of the generated patch. Negative values, mean opposite direction 
-so for example a pair of Right = -8 and Up = -3, means that you will be getting a patch 8 tiles **left** and 3 **down** from the position you will be standing at.
-If there is no grass/water tile in those coordinates, you will fail your target so be careful when choosing your spot.
+so for example a pair of Right = -5 and Up = 8, means that you will be getting a patch 5 tiles **left** and 8 **up** from the position you will be standing at.
+If there is no grass/water tile in the indicative coordinates, you will fail your target so be careful when choosing your spot.
 
 Yellow marked rows mean that a Pokemon will spawn successfully, otherwise they will be white (Clicking `Generate` will only show successful ones).
 
@@ -73,14 +87,14 @@ Run around (or use the search function in the lower screen), to trigger a DexNav
 
 Use a repel to prevent wild encounters and approach the Pokemon slowly using the Circle Pad then either capture or defeat it.
 
-The chain length value is now +1.
+The chain length value has now increased by 1.
 
 Things that will break the chain include:
 
-* Not encountering a hidden Pokemon that has appeared in the overworld either by leaving the area / waiting too long until it disappears / scaring it by running/walking fast towards it
-* Running away from a battle
+* Not encountering the hidden Pokemon that has appeared in the overworld either by leaving the area / waiting too long until it disappears / scaring it by running/walking fast towards it
+* Running away from the battle
 
-If you use the Search button to scan for hidden Pokemon and nothing is found, the chain does **NOT** break so don't worry about this.
+If you use the Search button to scan for hidden Pokemon and nothing is found, the chain does **NOT** break so you don't have to worry about this.
 
 ### Unstable delays
 
