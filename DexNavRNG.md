@@ -176,16 +176,14 @@ Citra is not affected. You can pause wherever you want since the hotkey is not u
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/DexNav/DexNav7.png)
 
-Exit the bag by pressing `B`, freeze the game again while in the X menu, and keep tapping `Select` until reach **10** frames before your target.
+Decide the frame type (odd/even) you want to hit, and exit the bag at a frame of the same type. 
+To do this, hold the right-back blue arrow icon, press `Select` 2 times and release, then press `Start` to unfreeze and exit the bag. 
 
-Hold down `X` and tap `Select` 10 times to reach your target frame while closing the menu slowly and finally tap `A` + any arrow key in the D-pad **gently** to rotate.
+When in the X menu, freeze the game again and keep tapping `Select` until reach **10** frames before your target.
 
-You want to avoid taking a step which could affect the delay or even worse the index hit.
+Hold down `X` and tap `Select` 10 times to reach your target frame while closing the menu slowly.
 
-This is a bit difficult to do precisely on console because you need to press `A` at once instead of `Select` slowly to make it work, 
-but what helps me a lot, is abuse the Pcalc lag by having the stats menu (Start + Left) open to make the game run slower.
-
-In any case it requires practice.
+Finally, using the Circle Pad, press `Select` 4 times to rotate the player character.
 
 If everything done right, you will activate the patch at the expected tile (-5, 8 in my case) with the correct IVs and everything.
 
@@ -202,8 +200,9 @@ The same goes for spots where an item like a Route sign can be interacted or a w
 * If you have used Pokemon Amie, make sure to turn it off when entering the bag. If it remains in queue, it will start advancing again like crazy when exiting.
 * Exit the bag by pressing `B` to land in the menu. Pressing `X` instead, will get you to the overworld, and if the place is noisy, the NPC influence will take effect before you can even get control of your character.
 * At noisy places, there is a slight chance that the resulting egg move will be wrong while everything else will be correct.
-Apparently the NPC influence interrupts the DexNav generation and advances the prng value that decides the egg slot.
+Apparently the NPC influence interrupts the DexNav generation and advances the prng state that decides the egg slot.
 There is not much we can do about this, other than keep track of the NPCs advances, and let them do their thing before entering the bag.
+If you feel like taking the risk and assuming an unexpected NPC blink will occur, you can check the `Alt Egg Move` box.
 
 [Suggested ways to deal with unstable delays](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/ExtraInfo.md#unstable-delays)
 
