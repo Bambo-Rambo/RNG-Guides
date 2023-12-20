@@ -31,7 +31,7 @@ My target date is May 31 2022 so it should look like this:
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/MT%20Seed/Seed1.png)
 
 If you don't have any preference regarding the date (in this case the process will be faster),
-just put a random date in Citra **but in any case, make sure the time is set to 00:00:00**.
+just put a random date on Citra **but in any case, make sure the time is set to 00:00:00**.
 
 Load the game, open CitraRNG and connect with Citra then skip the final cutscene by pressing `A` at a frame of your choice **and write it down somewhere**, 
 you are gonna reuse it later.
@@ -51,7 +51,7 @@ My target seed is `FFFFFFFF`, target date is 2022-05-31 and the other 2 values (
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/MT%20Seed/Seed2.png)
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/MT%20Seed/Seed3.png)
 
-Even if you don't target a specific date, you still need to put the date you used in Citra earlier, just keep the "Target Date" box unchecked.
+Even if you don't target a specific date, you still need to put the date you used on Citra earlier, just keep the "Target Date" box unchecked.
 The tool will find many more results to choose in later dates as well which -as said- makes the process faster if you are not picky about the date itself.
 
 The results in Tiny Finder show that after pressing 'A' to load the save file, 
@@ -62,7 +62,7 @@ and if I skip the cutscene at the same frame number (300) I did earlier, I will 
 
 Let's get this done, I need to save at frame 12476.
 
-**Important: In gen 6 no matter what CitraRNG shows, frames advance by 2 in most cases. 
+**Important: In gen 6 games no matter what CitraRNG shows, frames advance by 2 in most cases. 
 This means that if my current frame type is odd (1, 3, 5 etc), I can only hit odd frames and if it's even (2, 4, 6 etc) I can only hit even frames.
 This can be confusing because if my current frame type is odd 
 I can't hit frame 12476 which is my target and I will either hit 12475 or 12477 so I need to check my frame type and change it if necessary.**
@@ -71,7 +71,7 @@ I can't hit frame 12476 which is my target and I will either hit 12475 or 12477 
 
 Just go to the save option (Yes/No), freeze the game and start advancing slowly 1 by 1.
 
-Pay attention to the red box that highlights the option and check when it moves (you will see it getting bigger/slower as frames advance).
+Pay attention to the red outline box that highlights the option and check when it moves (you will see it getting bigger/smaller as frames advance).
 
 I notice that the animation happens in odd frames so I need to change my type before actually saving.
 
@@ -87,13 +87,13 @@ To do it correctly, freeze the game and hold the 'X' button to exit from the bag
 
 Since my target frame is 12476 (even), I freeze the game at frame 10000 (even) and exit the bag.
 
-All I need to do now is just save the game at frame 12476 and I expect my Save Parameter value to change from **67181505** to **79913DDC**.
+All I need to do now is just save the game at frame 12476 and I expect my Save Parameter value to change from **`67181505`** to **`79913DDC`**.
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/MT%20Seed/Seed5.png)
 
 There we go, almost done.
 
-Close the game and copy paste the New Date from Tiny Finder to Citra (2022-05-31T15:07:11) in my case.
+Close the game and copy paste the New Date from Tiny Finder to Citra (`2022-05-31T15:07:11`) in my case.
 
 Load the game again and skip the final cutscene at the same frame number you did earlier (as said I always use frame 300 to remember it easier).
 
@@ -115,26 +115,26 @@ or just put the Target date and time manually.
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/MT%20Seed/Seed8.png)
 
-Set the Citra RTC to the target Date + Time (in the previous method we set the time to 00:00:00) and for once again,
+Set the Citra RTC to the target Date + Time (in the previous method we set the time to 00:00:00) and like before,
 load the game and skip the final cutscene in a frame of your choice, 
-copy and put the initial seed and current Save Parameter from CitraRNG to Tiny Finder and click "Search".
-It will take a few seconds/minutes to find a result, don't worry.
+copy and put the initial seed and current Save Parameter from CitraRNG to Tiny Finder, 
+click `Search` and wait until it finds a result.
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/MT%20Seed/Seed9.png)
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/MT%20Seed/Seed10.png)
 
 Now things are getting a bit tricky.
 
-Close the game and in Citra menu, set the RTC to the new Date shown in the tool (**2022-06-06T00:23:59 in my case**).
+Close the game and set the Citra RTC to the new Date shown in the tool (**`2022-06-06T00:23:59` in my case**).
 
 Load the game and skip the final cutscene at the same frame you did earlier.
 
-If everything is done right, your actual (temporary) Initial Seed will be the one shown in the tool (**44F06FFF in my case**).
+If everything is done right, your actual (temporary) Initial Seed will be the one shown in the tool (**`44F06FFF` in my case**).
 
 Load the save file and like we did in the previous method, 
 you 're gonna have to save the game at the frame shown in order to obtain the New Save Parameter.
 
-(In my case, I need to save at frame **7189** and the Save Parameter will change from **79913DDC** to **82AE86D2**)
+(In my case, I need to save at frame **7189** and the Save Parameter will change from **`79913DDC`** to **`82AE86D2`**)
 
 In the previous method, we also explained how to deal with the odd/even frame issue so make sure you have understood that part first.
 
