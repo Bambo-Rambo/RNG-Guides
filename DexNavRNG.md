@@ -13,8 +13,7 @@ In any case, it's the base for TinyMT RNG which I highly recommend becoming well
 
 This guide will provide you with some useful tips to save time and effort but don't expect to succeed in a few minutes without prior experience.
 
-You will be able to rng for all species that appear in a given location including DexNav exclusives of course, 
-but not the ones that only appear in hordes, breakable rocks (rock smash) or by fishing.
+You will be able to rng for all species that appear in the wild including DexNav exclusives but not fishing Pokemon.
 
 ### Tools needed
 * [Tiny Finder](https://github.com/Bambo-Rambo/TinyFinder) (The most up to date build - The main tool for this RNG)
@@ -47,7 +46,7 @@ is affected by the random NPCs movements that advance the prng state unpredictab
 
 Instead, we are going to abuse this 50% chance of "randomly" triggering a hidden Pokemon by moving (walking/turning) close to the wild area.
 The idea is to make **19 turns (or steps)**, do the necessary advances and finally **rotate** the character at the right time and succeed.
-As said above, horde/rock smash/fishing exclusive Pokemon **do not** spawn with this method.
+As said earlier, fishing exclusive Pokemon **do not** spawn with this method.
 
 # Getting Started
 
