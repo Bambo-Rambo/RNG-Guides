@@ -190,18 +190,16 @@ If everything done right, you will activate the patch at the expected tile (-5, 
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/DexNav/DexNav9.png)
 
-### Things to NEVER forget
+### Things to NEVER forget (from personal experience)
 
-* After finding the desired index, if you want a nice spread, don't forget to refresh the MT seed until you find it.
-* When you have stood on your spot, make sure that your current step counter value is 19 (red marked). 
-* The spot itself, requires background search. If there is an NPC next to the character, by pressing `A` when rotating, you may speak to them accidentaly. 
-The same goes for spots where an item like a Route sign can be interacted or a water tile nearby which will prompt you to surf inside it.
-* If you have used Pokemon Amie, make sure to turn it off when entering the bag. If it remains in queue, it will start advancing again like crazy when exiting.
-* Exit the bag by pressing `B` to land in the menu. Pressing `X` instead, will get you to the overworld, and if the place is noisy, the NPC influence will take effect before you can even get control of your character.
+* After finding the desired TinyMT index, don't forget to refresh the MT seed a few times in case you are looking for a nice spread.
+* When you have found your spot, make sure that your current step counter value is 19 (red marked) before entering the bag. 
+* If you have used Pokemon Amie, make sure it is turned off when entering the bag. If it remains in queue, it will start advancing again like crazy when exiting.
+* When in the bag, exit by using the blue arrow in the touch screen of your system. Don't forget the odd/even issue.
 * At noisy places, there is a slight chance that the resulting egg move will be wrong while everything else will be correct.
-Apparently the NPC influence interrupts the DexNav generation and advances the prng state that decides the egg slot.
+Apparently the NPC influence interrupts the DexNav generation and advances the prng state right before the egg slot determination.
 There is not much we can do about this, other than keep track of the NPCs advances, and let them do their thing before entering the bag.
-If you feel like taking the risk and assuming an unexpected NPC blink will occur, you can check the `Alt Egg Move` box.
+If you feel like taking the risk of assuming an unexpected NPC action, you can check the `Alt Egg Move` box.
 
 [Suggested ways to deal with unstable delays](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/ExtraInfo.md#unstable-delays)
 
