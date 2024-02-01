@@ -5,15 +5,15 @@
 Ever wanted to find a perfect 6IV shiny in the wild that has its hidden ability and an egg move it could not learn otherwise?
 
 Follow this guide for **RNG abusing** DexNav mechanics and enjoy the full potential of this amazing ORAS exclusive feature!
-A Pokemon flawless in every aspect (shininess/stats/ability/egg move/gender/level) is an absolutely realistic target even without the use of emulator.
+A flawless Pokemon (shininess/stats/ability/egg move/gender/level) is an absolutely realistic target even without emulator usage.
 
 If you want to catch easy and fast shinies without caring too much about stats and other traits, 
 then [Normal Wild RNG guide](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/NormalWild-FS-RNG.md) may suit you better.
-In any case, it's the base for TinyMT RNG which I highly recommend becoming well familiar with, before attempting DexNav.
+In any case though, I still recommend reading it before attempting DexNav, since it is the base for TinyMT RNG.
 
-This guide will provide you with some useful tips to save time and effort but don't expect to succeed in a few minutes without prior experience.
+This guide will provide you with some useful tips to save time and effort but don't expect to succeed in just a few minutes without prior experience.
 
-You will be able to rng for all species that appear in the wild including DexNav exclusives but not fishing Pokemon.
+Note that, apart from fishing and Rock Smash exclusives, any other species that appears in the grass/water is available with this method.
 
 ### Tools needed
 * [Tiny Finder](https://github.com/Bambo-Rambo/TinyFinder) (The most up to date build - The main tool for this RNG)
@@ -24,7 +24,7 @@ for **3ds** or [CitraRNG fork](https://github.com/Bambo-Rambo/CitraRNG) for **Ci
 ### Recommended
 * Max Repels
 * Leading with a Pokemon with synchronize ability if you want a specific nature
-* If playing on console, it will be helpful to keep one side of the bag empty (We will see later why). I discarded all my Berries since I don't have any use of them
+* If playing on console, it will be helpful to keep one side of the bag empty (we will see later why). I discarded all my Berries since I don't have any use of them
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/DexNav/DexNav1.png)
 
@@ -32,19 +32,18 @@ for **3ds** or [CitraRNG fork](https://github.com/Bambo-Rambo/CitraRNG) for **Ci
 
 Despite the increased difficulty, the main advantage of DexNav RNG over Normal wild RNG 
 (apart from the countless [extra benefits](https://bulbapedia.bulbagarden.net/wiki/DexNav#Special_qualities) and DexNav exclusive Pokemon)
-is that, similarly to PokeRadar in XY, we can generate guaranteed **shiny patches**.
+is that, similarly to Pokeradar in XY, we can generate guaranteed **shiny patches**.
 
-This means that IVs and shininess use a different prng state for generation, speeding up the process of find high IV shinies a lot!
+This means that IVs and shininess use separate prng states for determination, speeding up the process of finding high IV shinies a lot!
 
-Even better, unlike Pokeradar, building a chain is not required (although it helps) for shiny patches so users may rng for them instantly upon booting the game.
-Here are some [more differences](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/ExtraInfo.md#differences-between-dexnav-and-pokeradar) between PokeRadar and DexNav to get the main idea.
+Even better, unlike Pokeradar, building a chain is not required (although it helps) for manipulating a shiny patch, so users may RNG for one immediately upon booting the game.
+Here are some [more differences](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/ExtraInfo.md#differences-between-dexnav-and-pokeradar) between Pokeradar and DexNav to get the main idea.
 
 Now most people including shiny hunters use the "Search function" in the touch screen to guarantee the desired species and avoid getting the wrong shiny.
 
-Regarding RNG abuse though, this method is not consistent because it results in unstable delays and more important, 
-is affected by the random NPCs movements that advance the prng state unpredictably.
+Regarding RNG abuse though, this method is not always consistent because random NPC movements advance the TinyMT state unpredictably.
 
-Instead, we are going to abuse this 50% chance of "randomly" triggering a hidden Pokemon by moving (walking/turning) close to the wild area.
+In this guide, we are going to abuse this 50% chance of "randomly" triggering a hidden Pokemon by moving (walking/turning) closely to the wild area.
 The idea is to make **19 turns (or steps)**, do the necessary advances and finally **rotate** the character at the right time and succeed.
 As said earlier, fishing exclusive Pokemon **do not** spawn with this method.
 
@@ -52,12 +51,13 @@ As said earlier, fishing exclusive Pokemon **do not** spawn with this method.
 
 ### Step 1 – Choosing the target TinyMT Index in Tiny Finder
 
-The **TinyMT prng state** determines species (slot), shininess, HA, egg move, potential, held item, nature sync and level boost (+10).
+The **TinyMT prng state** determines species (slot), shininess, HA, egg move, potential, held item, nature sync and the possible (+10) level boost.
 
-The **MT state** mainly determines IV spread and gender.
-If shiny, HA and synchronize checks fail from TinyMT though, MT determines the values of PID, ability (1/2) and nature.
+The **MT state** mainly determines the IV spread and gender.
+However, if shiny, HA and synchronize checks, fail from TinyMT, MT will determine those values instead 
+(not recommended, we will pull them from TinyMT no matter what, unless you don't care about them).
 
-We are looking for a good TinyMT index first because the only way to get a new seed is by resetting the game.
+We are looking for a good TinyMT index first because the only way to get a new TinyMT seed, is by resetting the game.
 When we find something that covers our expectations, we will focus on the MT seed which can be refreshed pretty quickly (takes around 5 seconds if you are using the NTR Helper).
 We don't want to find a frame with a nice spread (MT) only to realize that there are no good TinyMT indexes to combine with.
 
