@@ -23,7 +23,7 @@ for **3ds** or [CitraRNG fork](https://github.com/Bambo-Rambo/CitraRNG) for **Ci
 
 ### Recommended
 * Max Repels
-* Leading with a Pokemon with synchronize ability if you want a specific nature
+* A Pokemon with the synchronize ability if you want a specific nature
 * If playing on console, it will be helpful to keep one side of the bag empty (we will see later why). I discarded all my Berries since I don't have any use of them
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/DexNav/DexNav1.png)
@@ -36,7 +36,7 @@ is that, similarly to Pokeradar in XY, we can generate guaranteed **shiny patche
 
 This means that IVs and shininess use separate prng states for determination, speeding up the process of finding high IV shinies a lot!
 
-Even better, unlike Pokeradar, building a chain is not required (although it helps) for manipulating a shiny patch, so users may RNG for one immediately upon booting the game.
+Even better, unlike Pokeradar, building a chain is not required (although it helps) for generating a shiny patch, so users may RNG for one immediately upon booting the game.
 Here are some [more differences](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/ExtraInfo.md#differences-between-dexnav-and-pokeradar) between Pokeradar and DexNav to get the main idea.
 
 Now most people including shiny hunters use the "Search function" in the touch screen to guarantee the desired species and avoid getting the wrong shiny.
@@ -44,14 +44,14 @@ Now most people including shiny hunters use the "Search function" in the touch s
 Regarding RNG abuse though, this method is not always consistent because random NPC movements advance the TinyMT state unpredictably.
 
 In this guide, we are going to abuse this 50% chance of "randomly" triggering a hidden Pokemon by moving (walking/turning) closely to the wild area.
-The idea is to make **19 turns (or steps)**, do the necessary advances and finally **rotate** the character at the right time and succeed.
+The idea is to make **19 turns (or steps)**, do the necessary advances, wait, and finally **rotate** the character at the right time and succeed.
 As said earlier, fishing exclusive Pokemon **do not** spawn with this method.
 
 # Getting Started
 
 ### Step 1 – Choosing the target TinyMT Index in Tiny Finder
 
-The **TinyMT prng state** determines species (slot), shininess, HA, egg move, potential, held item, nature sync and the possible (+10) level boost.
+The **TinyMT prng state** determines slot (species), potential, shininess, HA, egg move, held item, nature sync and the possible (+10) level boost.
 
 The **MT state** mainly determines the IV spread and gender.
 However, if shiny, HA and synchronize checks, fail from TinyMT, MT will determine those values instead 
@@ -67,7 +67,7 @@ as well as understand how the Search Level and Chain length affect the results.
 When you are done, it's finally time to boot the game.
 
 Connect your console **to 3DS RNG Tool first** then to Tiny Finder using the NTR Helper and when the [first cutscene](https://camo.githubusercontent.com/0ad13238fe4c81572505be45e2fc78cd864f9e0c5abf7ff3d1809d6da1bd23f0/68747470733a2f2f692e696d6775722e636f6d2f6c38534c4b62622e706e67) loads, 
-press `Update` in Tiny Finder.
+press `Update` in Tiny Finder (this step is not necessary but is really helpful especially for beginners).
 
 It will read your initial TinyMT state automaticaly, as well as your current step counter and the current chain length (both set to 0 when booting the game obviously)
 and will then update the list with possible available results to choose from.
@@ -78,7 +78,7 @@ If you didn't find what you were looking for, set the chain length to 4, **unche
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/DexNav/DexNav2.png)
 
-A 4-length chain takes 2-3 minutes to build and is totally worth it, unless you are looking for a low level Pokemon on purpose (so the +10 level boost should be avoided).
+A **4-length chain** takes 2-3 minutes to build and is totally worth it, unless you are looking for a low level Pokemon on purpose (so the +10 level boost should be avoided).
 
 If you still didn't find the desired index, hard reset (or soft reset if using Pokereader) your system and try again.
 
@@ -91,7 +91,8 @@ In 3DS RNG Tool, choose `DexNav` and set up the tool **according to your target 
 My target index is 41800 so I set the Min Frame to 20000 (41800 / 3 ≈ 13933).
 More details in a bit.**
 
-As shown in the previous image, my index guarantees shininess, has the Hidden Ability, successfuly syncs the Nature and has 3 perfect IVs (potential) so I set up 3DS RNG Tool like this:
+As shown in the previous image, the target index I am gonna aim for **in Tiny Finder**, guarantees shininess, has the Hidden Ability, 
+successfuly syncs the Nature and has 3 perfect IVs (potential) so I need to set up 3DS RNG Tool like this:
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/DexNav/DexNav3.png)
 
@@ -102,7 +103,7 @@ This will also solve the odd/even frame issue.
 
 You may now pick any frame of your choice. 
 
-# Prepartion
+# In-game preparation
 
 If you have filtered the results to the maximum, your target TinyMT index is most likely very far away and you will need to advance thousands of indexes.
 The fastest way is going to a rainy place and wait there (Route 120 always works, just move down to the map a little and a heavy rain will start). 
@@ -117,7 +118,7 @@ In the following image, I make use of both.
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/DexNav/DexNav4.png)
 
 When you get close to your target index, return to your location 
-(If you have to build a chain, I suggest returning around ~1500 indexes before your target otherwise the suggested number is ~800).
+(If you have to build the 4-length chain, I suggest returning around ~1500 indexes before your target otherwise the suggested number is ~800).
 
 Check the coordinates of your index in Tiny Finder and find an appropriate tile to stand on. 
 Remember that the resulting patch must fit INSIDE the grass (or water if you aim for an aquatic encounter).
@@ -129,19 +130,19 @@ stand on the correct spot, press `Update` to refresh the Step Counter and take t
 
 ### Finding the noise for your current spot
 
-**Skip this step if you are sure there are no (running) NPCs nearby.**
+**Skip this step if you are sure there are not many NPCs in the area (most common scenario).**
 
 When closing the X menu and the character is free to move again, 
 the NPCs influence (blinking/moving) starts taking effect and we need to find out if this happens immediately after closing the menu, or a bit later in which case it won't be an issue.
 
-For Normal Wild RNG, the tool takes that into account (since the suggested spots are specific), 
+For Normal Wild RNG, the tool takes that into account (since the suggested spots are predetermined), 
 but since your position in DexNav RNG varies, you have to calculate the noise yourself (0 in most cases but still).
 
 Press `X` to open the menu and then freeze the game by pressing `Start + Select`.
 
 While the game is frozen, hold down `X` and tap `select` 10 times, in order to close the menu slowly.
 
-If you notice the TinyMT state changing in the 10th press, take note of how much it advanced and set `Calibration` to that number (usually 0 as said, rarely 1 and almost never 2).
+If you notice the TinyMT state changing in the 10th press, take note of how much it advanced and set `Calibration` to that number.
 
 # DexNav RNG
 
@@ -155,7 +156,7 @@ At this point also, Tiny Finder will have set the `Min Index` value to something
 This is the number of advances consumed **upon exiting the bag** (you cannot hit anything lower) and we need to account for that 
 (it's usually 15, sometimes 3 in caves etc but I recommend making a test for your current location/spot to be sure).
 
-Just advance the TinyMT state until the value of `Min Frame` matches the one of your target index.
+Just advance the TinyMT state until the value of your target index matches `Min Frame`.
 
 Here are some simple and consistent ways to advance inside the bag:
 
@@ -166,12 +167,12 @@ This will cause 1 advancement. If you stay in the move replacement screen for to
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/DexNav/DexNav6.png)
 
-Considering you did everything right, your current Index value matches `Min Index` value (15 in my case) all you need to do now, 
+Considering you did everything right, your current Index value matches `Min Index` value (15 in Safari Zone) all you need to do now, 
 is go to the **empty side of your bag** I recommended in the beginning of the guide, and wait until you get ~110-120 frames before your target (exiting the bag usually takes up to ~100 frames).
 
-At this point, press `Start + Select` to freeze the game. If you do this at a non empty side of the bag, you will be prompted to sort the existing items with dire consequences.
+At this point, press `Start + Select` to freeze the game. If there is no empty side in the bag, you will be prompted to sort the existing items with dire consequences.
 
-Citra is not affected. You can pause wherever you want since the hotkey is not used elsewhere).
+Citra is not affected. You can pause wherever you want since the hotkey is not used elsewhere.
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/DexNav/DexNav7.png)
 
@@ -180,9 +181,10 @@ To do this, hold the right-back blue arrow icon, press `Select` 2 times and rele
 
 When in the X menu, freeze the game again and keep tapping `Select` until reach **10** frames before your target.
 
-Hold down `X` and tap `Select` 10 times to reach your target frame while closing the menu slowly.
+Hold down `X` and consume the remaining 10 frames by tapping `Select`. This will also close the menu slowly.
 
-Finally, using the Circle Pad, press `Select` 4 times to rotate the player character.
+You are on your target frame and the player character is free to move again so, while moving the Circle Pad, 
+press `Select` to advance 4 frames, release the Circle Pad and tap `A` to unfreeze and make the final movement.
 
 If everything done right, you will activate the patch at the expected tile (-5, 8 in my case) with the correct IVs and everything.
 
@@ -192,6 +194,7 @@ If everything done right, you will activate the patch at the expected tile (-5, 
 
 ### Things to NEVER forget (from personal experience)
 
+* If using Pokereader instead of Pcalc, frame advances require 1 `Select` press instead of 2.
 * After finding the desired TinyMT index, don't forget to refresh the MT seed a few times in case you are looking for a nice spread.
 * When you have found your spot, make sure that your current step counter value is 19 (red marked) before entering the bag. 
 * If you have used Pokemon Amie, make sure it is turned off when entering the bag. If it remains in queue, it will start advancing again like crazy when exiting.
