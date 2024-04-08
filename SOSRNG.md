@@ -18,10 +18,10 @@ The method itself is not actually difficult but it requires a careful and detail
 Having shiny hunted using SOS encounters in the past and/or having understood the [guide](https://www.pokemonrng.com/retail-usum-sos) in Pokemonrng.com, 
 will make this guide easier to understand, but neither are necessary.
 ### Tools
-* [Citra Emulator](https://github.com/citra-emu) (Either a Canary or Nightly build)
-* [3DS RNG Tool](https://ci.appveyor.com/project/Bambo-Rambo/3dsrngtool/build/artifacts) (my fork with various enhancements and bug fixes)
+* [Citra Emulator](https://github.com/PabloMK7/citra/releases)
+* [3DS RNG Tool](https://github.com/wwwwwwzx/3DSRNGTool/releases)
 * [CitraRNG](https://github.com/Admiral-Fish/CitraRNG/releases) (either the original script or [my fork](https://github.com/Bambo-Rambo/CitraRNG) which helps dealing with crashes easier)
-* [3DS Time Finder](https://github.com/Admiral-Fish/3DSTimeFinder) (optional for searching high IV spreads)
+* [3DS Time Finder](https://github.com/Admiral-Fish/3DSTimeFinder/releases) (optional, for searching high IV spreads)
 * [PKHex](https://github.com/kwsch/PKHeX/releases) (for setting up your team)
 
 ### Introduction

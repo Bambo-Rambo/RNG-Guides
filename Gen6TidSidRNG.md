@@ -2,7 +2,7 @@
 
 ### Tools needed: 
 
-* [3DS RNG Tool](https://github.com/wwwwwwzx/3DSRNGTool/releases/tag/1.0.5)
+* [3DS RNG Tool](https://github.com/wwwwwwzx/3DSRNGTool/releases)
 * [CitraRNG](https://github.com/Admiral-Fish/CitraRNG/releases)
 * [Tiny Finder](https://ci.appveyor.com/project/Bambo-Rambo/tinyfinder/build/artifacts)
 

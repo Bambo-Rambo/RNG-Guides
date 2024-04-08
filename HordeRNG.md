@@ -15,7 +15,7 @@ That said, from now on, we are gonna pretend that Sweet Scent doesn't exist at a
 
 # Tools
 
-* [3DS RNG Tool](https://ci.appveyor.com/project/Bambo-Rambo/3dsrngtool/build/artifacts) (Fork)
+* [3DS RNG Tool](https://github.com/wwwwwwzx/3DSRNGTool/releases)
 * [Tiny Finder](https://ci.appveyor.com/project/Bambo-Rambo/tinyfinder/build/artifacts)
 * [Pcalc](https://gbatemp.net/threads/pokecalcntr-for-gen-6-the-rng-tool-suite-for-the-3ds.473221/) for 3ds or [CitraRNG](https://github.com/Admiral-Fish/CitraRNG/releases) for Citra Emulator
 

@@ -17,7 +17,7 @@ Note that, apart from fishing and Rock Smash exclusives, any other species that 
 
 ### Tools needed
 * [Tiny Finder](https://github.com/Bambo-Rambo/TinyFinder) (The most up to date build - The main tool for this RNG)
-* [3DS RNG Tool fork](https://github.com/Bambo-Rambo/3DSRNGTool#forked-from-wwwwwwzx3dsrngtool) (This version has DexNav RNG implemented unlike the official version)
+* [3DS RNG Tool](https://github.com/wwwwwwzx/3DSRNGTool/releases)
 * [Pcalc G6](https://gbatemp.net/threads/pokecalcntr-for-gen-6-the-rng-tool-suite-for-the-3ds.473221/) or [PokeReader](https://github.com/zaksabeast/PokeReader)
 for **3ds** or [CitraRNG fork](https://github.com/Bambo-Rambo/CitraRNG) for **Citra Emulator**
 

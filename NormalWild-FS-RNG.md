@@ -1,7 +1,7 @@
 # Normal Wild - Friend Safari RNG
 
 ### Tools needed:
-* [3DS RNG Tool](https://ci.appveyor.com/project/Bambo-Rambo/3dsrngtool/build/artifacts)
+* [3DS RNG Tool](https://github.com/wwwwwwzx/3DSRNGTool/releases)
 * [Tiny Finder](https://ci.appveyor.com/project/Bambo-Rambo/tinyfinder/build/artifacts) (The latest commit)
 * [Pcalc G6](https://gbatemp.net/threads/pokecalcntr-for-gen-6-the-rng-tool-suite-for-the-3ds.473221/) (Retail) or [CitraRNG](https://github.com/Admiral-Fish/CitraRNG/releases) (Emulator)
 
