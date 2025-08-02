@@ -49,18 +49,17 @@ As said above, MT advances constantly but TinyMT stops advancing inside the bag 
 
 ### Preparation
 
-Load and save the game in the appropriate grass/cave tile for your location according to the following albums:
+Load the game and save in the appropriate spot for your location according to the following albums:
 
 * [XY](https://imgur.com/a/pGk0bhM)
 * [ORAS](https://imgur.com/a/B3URhjo)
   
-Soft reset your game and proceed to the following screen:
+Soft reset your game and stop in the following screen, which is when your Initial Seed is being determined:
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Wild/Wild3.png)
 
-The Initial Seed (MT) has just been determined. 
 Let's put it in 3DS RNG Tool and see what we can hit
-(careful not to confuse MT with TinyMT seed).
+(careful not to confuse MT with TinyMT seeds).
 
 My target is Zoroark so I have to set the Gender Ratio to 7:1.
 If you are using a synchronizer, check the **Assume synced** button and your synchronizer's nature in order to get accurate gender and nature results.
@@ -70,21 +69,22 @@ Press **Calculate** to get the results for your current seed.
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Wild/Wild4.png)
 
-If those results don't satisfy you because you are looking for a better IV spread, 
-or you get no results at all, press **B** on your 3ds to return to the previous cutscene.
+If you are looking for a better IV spread or you get no results at all, 
+press **B** on your 3ds to return to the previous cutscene.
 Doing so, you reject the current Initial Seed, so press **A** to generate a new one.
 Type the new seed in 3DS RNG Tool and press **Calculate** to get the new results.
 
 Repeat this process until you find something that meets your preferences but don't have too high expectations.
 
-When ready, select **Continue** on your 3ds to load your save file, use a repel and start walking around (running works but not recommended) until its effect ends.
+When ready, press **Continue** on your 3ds to load your save file, use a repel and start walking around (running works but not recommended) until its effect ends.
 
 **Do not step outside the encounter tiles.** 
 Walk inside them, the repel protects you from random unwanted encounters anyway.
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Wild/Wild5.png)
 
-When the repel is consumed, don't use another one, enter the bag and press **Start + Select** to freeze the game.
+When the repel is consumed, don't use another one, enter the bag and press **Start + Select** to freeze the game
+(if you get a random encounter for whatever reason, repeat the repel process).
 
 Time to adjust Tiny Finder.
 
@@ -109,7 +109,7 @@ A small window will pop up with the instructions you need to follow.
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Wild/Wild7.png)
 
-If you get the message that no advances are required, you can skip to the next section **Hitting the target Pokemon**.
+If you get the message that no advances are required, you can skip to the next section **[Hitting the target Pokemon](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/NormalWild-FS-RNG.md#hitting-the-target-pokemon)**.
 
 If your target index is unreachable due to it being too close, you will get the respective message.
 
@@ -122,9 +122,9 @@ This is because when you close the bag, 27 advances will be consumed so you need
 
 Each of these actions causes different (predictable) RNG jumps and the tool combines them to calculate the shortest path.
 
-After following the indicated steps, I reach 673 as expected.
+After following the indicated steps, I reach index 673 as expected.
 
-The TinyMT part is done, so let's switch to our empty side of the bag, and let MT advances on its own.
+The TinyMT part is done, so let's switch to our empty side of the bag and let the game advance MT frames on its own.
 
 ### Hitting the target Pokemon
 
@@ -138,9 +138,9 @@ Spam **Select** presses until you get 10 MT frames before your target (17863 in 
 
 Finally, hold **B** and tap Select **5 times**.
 
-This will slowly close the X menu, while you advance to your target frame, everything is ready!
+This will slowly close the X menu, while advancing to your target frame, everything is ready!
 
-Hold down any arrow on the D-pad (except the one your character is looking at) and hold **A** to rotate yourself and trigger the encounter.
+Hold down any arrow on the D-pad (except the one your character is looking at) and hold **A** to make a rotation and trigger the encounter.
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Wild/Wild8.gif)
 
