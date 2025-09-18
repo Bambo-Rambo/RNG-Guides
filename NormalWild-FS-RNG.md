@@ -83,8 +83,13 @@ Walk inside them, the repel protects you from random unwanted encounters anyway.
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Wild/Wild5.png)
 
-When the repel is consumed, don't use another one, enter the bag and press **Start + Select** to freeze the game
-(if you get a random encounter for whatever reason, repeat the repel process).
+When the repel is consumed, the game will ask you to use another one (if you have more left), press **NO**.
+
+If playing ORAS, at this point you need to make sure there is **no** hidden (DexNav) Pokemon shaking around because it will ruin the RNG later. 
+You need to scare it so it will disappear.
+If you get a random encounter, repeat the repel process.
+
+Enter the bag and press **Start + Select** to freeze the game.
 
 Time to adjust Tiny Finder.
 
