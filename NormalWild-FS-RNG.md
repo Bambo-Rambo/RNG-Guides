@@ -1,14 +1,15 @@
 # XY/ORAS wild Pokemon RNG made EASY
 
-**As of November 2025, this is the most up to date guide for RNG abusing wild encounters in Gen 6 games.
-Feel free to use whatever resources you find useful, but people will be less likely to understand your problem and help you with troubleshooting.**
+### **As of April 2026, this is the most up to date guide for RNG abusing wild encounters in Gen 6 games.**
+
+### **A practical demonstration of this guide can be seen in this [video](https://www.youtube.com/watch?v=aR6_LCbdIso), but only use it as a reference, you should still read the whole guide.**
 
 * Your 2ds/3ds system must run **[Custom Firmware (CFW)](https://3ds.hacks.guide/)** in order to follow this guide.
 * This guide is about RNG abusing for **single** wild Pokemon. It **WORKS** with Friend Safari and it **WORKS** on Emulator too.
 * If you want to RNG for **Horde encounters**, use this **[guide](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/HordeRNG.md)** instead.
 
 ### Tools needed:
-* The latest commit of **[Tiny Finder](https://ci.appveyor.com/project/Bambo-Rambo/tinyfinder/build/artifacts)** (The .zip file)
+* The latest commit of **[Tiny Finder](https://github.com/Bambo-Rambo/TinyFinder/releases)** (The .exe file)
 * The latest release of **[3DS RNG Tool](https://github.com/wwwwwwzx/3DSRNGTool/releases)** (The .exe file)
 * The PokeReader plugin. This is the overlay that appears on screen and shows your current RNG info as well as wild Pokemon's stats.
   Use one of the following guides to download, install and activate PokeReader
@@ -114,6 +115,8 @@ Press **Generate** and check the results.
 
 Index 700 is the closest one so I am gonna aim for that.
 
+**A reminder to watch this [video](https://www.youtube.com/watch?v=aR6_LCbdIso) if you are having hard time understanding the process so far.**
+
 ### RNG
 
 Right click on the row of your target index (700 in my case) and press **Calculate Advances**.
@@ -156,6 +159,8 @@ This will slowly close the X menu, while advancing to your target frame, everyth
 Hold down any arrow on the D-pad (except the one your character is looking at) and hold **A** to make a rotation and trigger the encounter.
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Wild/Wild8.gif)
+
+**For once again, feel free to watch this [video](https://www.youtube.com/watch?v=aR6_LCbdIso) if you are having hard time understanding something in the guide.**
 
 ### Summary
 
