@@ -2,7 +2,15 @@
 
 ### **As of September 2026, this is the most up to date guide for RNG abusing wild encounters in Gen 6 games.**
 
-### **A practical demonstration of this guide can be seen in this [video](https://www.youtube.com/watch?v=aR6_LCbdIso), but only use it as a reference, you should still read the whole guide.**
+Gen 6 RNG, introduces many new concepts, is being affected by many factors and it's quite different from other generations.
+Newbies may find it overwhelming at first, but it's absolutely consistent, it doesn't "troll" the user, the steps are actually pretty simple and straightforward, 
+and once everything is understood, success is **100% guaranteed**.
+
+Please take your time to read the **whole** guide and do **not skip** steps you may consider unimportant.
+At least **95% of users** who report problems/inconsistencies, are later found to have **skipped** crucial steps that are clearly and thoroughly described.
+You don't want to do that.
+
+### **A practical demonstration of the guide can be seen in this [video](https://www.youtube.com/watch?v=aR6_LCbdIso), but only use it as a reference, you should still read the whole guide.**
 
 * Your 2ds/3ds system must run **[Custom Firmware (CFW)](https://3ds.hacks.guide/)** in order to follow this guide.
 * This guide is about RNG abusing for **single** wild Pokemon. It **WORKS** with Friend Safari and it **WORKS** on Emulator too.
