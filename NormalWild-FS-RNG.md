@@ -1,6 +1,6 @@
 # XY/ORAS wild Pokemon RNG made EASY
 
-### **As of April 2026, this is the most up to date guide for RNG abusing wild encounters in Gen 6 games.**
+### **As of September 2026, this is the most up to date guide for RNG abusing wild encounters in Gen 6 games.**
 
 ### **A practical demonstration of this guide can be seen in this [video](https://www.youtube.com/watch?v=aR6_LCbdIso), but only use it as a reference, you should still read the whole guide.**
 
@@ -25,6 +25,7 @@
 Examples of such NPCs include: **your friends** in XY that appear in various cases through the story, 
 **May** at Route 101 explaining you how to approach hidden Pokemon, **Aarune** at Fiery Path who gives you TM96 after defeating Maxie/Archie at Mt. Chimney and many more.
 If you have finished the story, chances are you don't need to worry about this, but still make sure there are no events like these still waiting to be triggered at the location of the RNG.
+**Do not skip this step. DO NOT.**
 * One completely empty side in the bag. I discarded all my berries since I don't need them
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Wild/Wild1.png)
@@ -57,6 +58,12 @@ Similarly to these, we are gonna abuse MT and TinyMT simultaneously to hit our t
 As said above, MT advances constantly but TinyMT stops advancing inside the bag (unless we force it to), of which we are gonna take advantage.
 
 ### Preparation
+
+Before we begin, a crucial reminder that **you MUST get rid of temporary NPCs that are either part of the story, or just give you an item once, then disappear.
+Examples of such NPCs include: **your friends** in XY that appear in various cases through the story, 
+**May** at Route 101 explaining you how to approach hidden Pokemon, **Aarune** at Fiery Path who gives you TM96 after defeating Maxie/Archie at Mt. Chimney and many more.
+If you have finished the story, chances are you don't need to worry about this, but still make sure there are no events like these still waiting to be triggered at the location of the RNG.
+Do not skip this step. DO NOT.**
 
 Load the game and save in the appropriate spot for your location according to the following albums:
 
@@ -94,9 +101,9 @@ Walk inside them, the repel protects you from random unwanted encounters anyway.
 
 When the repel is consumed, the game will ask you to use another one (if you have more left), press **NO**.
 
-If playing ORAS, at this point you need to make sure there is **no** hidden (DexNav) Pokemon shaking around because it will ruin the RNG later. 
-You need to scare it so it will disappear.
-If you get a random encounter, repeat the repel process.
+If playing ORAS, at this point you need to make sure there is **NO** hidden (DexNav) Pokemon shaking around because it will ruin the RNG later. 
+You need to scare it into disappearing. If you don't, you will fail the RNG for sure.
+If you get a random encounter while trying to scare it, repeat the whole repel process.
 
 Enter the bag and press **Start + Select** to freeze the game.
 
@@ -161,6 +168,12 @@ Hold down any arrow on the D-pad (except the one your character is looking at) a
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Wild/Wild8.gif)
 
 **For once again, feel free to watch this [video](https://www.youtube.com/watch?v=aR6_LCbdIso) if you are having hard time understanding something in the guide.**
+
+And as a last reminder, **you MUST get rid of temporary NPCs that are either part of the story, or just give you an item once, then disappear.
+Examples of such NPCs include: **your friends** in XY that appear in various cases through the story, 
+**May** at Route 101 explaining you how to approach hidden Pokemon, **Aarune** at Fiery Path who gives you TM96 after defeating Maxie/Archie at Mt. Chimney and many more.
+If you have finished the story, chances are you don't need to worry about this, but still make sure there are no events like these still waiting to be triggered at the location of the RNG.
+Do not skip this step. DO NOT.**
 
 ### Summary
 
